@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Dany Chheang's personal portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
+    "watch-css": "onchange 'tailwind.config.js' 'src/**/*.css' -- npm run build-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcc5235/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcc5235/Portfolio/issues"
+  },
+  "homepage": "https://github.com/dcc5235/Portfolio#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "css": "^3.0.0",
+    "nano": "^9.0.3",
+    "onchange": "^7.1.0",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  }
+}
