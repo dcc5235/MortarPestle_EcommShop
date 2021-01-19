@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-css": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
+    "production-css": "NODE_ENV=production postcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
     "watch-css": "onchange 'tailwind.config.js' 'src/**/*.css' -- npm run build-css"
   },
   "repository": {
