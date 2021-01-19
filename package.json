@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Dany Chheang's personal portfolio site",
+  "description": "Dany Chheang's Portfolio Project for ecommerce site",
   "main": "index.js",
   "scripts": {
     "build-css": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
