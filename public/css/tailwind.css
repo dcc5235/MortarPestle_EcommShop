@@ -31223,6 +31223,10 @@ video {
   transform: translateX(0);
 }
 
+#basket {
+  min-width: 28rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
