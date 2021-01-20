@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+#img-container:hover button {
+  transform: translateX(0);
+}
