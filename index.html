@@ -12,7 +12,7 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="sticky top-0 z-10 flex items-center bg-gray-100 bg-opacity-90 h-14">
+  <nav class="sticky top-0 z-10 flex items-center max-w-6xl bg-gray-100 bg-opacity-90 h-14 ">
     <div class="container flex items-center justify-between max-w-6xl px-6 py-0">
       <span class="text-2xl">
         <i class="fas fa-bars"></i>
@@ -33,7 +33,7 @@
   </nav>
 
   <!-- BANNER/HERO -->
-  <header class="flex items-center justify-center h-screen bg-center bg-no-repeat bg-cover"
+  <header class="flex items-center justify-center h-screen max-w-6xl bg-center bg-no-repeat bg-cover "
     style="background-image: url(images/img2.jpg)">
     <div class="inline-block p-8 text-center bg-gray-200 bg-opacity-70">
       <h1 class="mb-12 text-5xl font-bold tracking-widest uppercase">Latest Collection</h1>
@@ -44,13 +44,28 @@
   </header>
 
   <!-- PRODUCTS -->
-  <section class="px-0 py-16">
+  <section class="max-w-6xl px-0 py-16">
     <div class="mb-20 text-4xl tracking-widest text-center uppercase">
       <h2 class="mb-20 text-4xl tracking-widest text-center uppercase">new arrivals</h2>
       <div class="grid w-screen max-w-6xl grid-cols-3 m-0 gap-x-6 gap-y-8">
+        <article class="text-2xl text-center">
+          <div class="relative overflow-hidden">
+            <img src="/images/img5.jpg" alt="product sample"
+              class="block w-full min-h-full transition duration-300 ease-in">
+            <button
+              class="absolute px-3 py-2 font-bold tracking-widest uppercase transition duration-300 ease-in translate-y-full bg-gray-100 border-none cursor-pointer bg-opacity-90 top-3/4 -right-0"
+              data-id="1">
+              <i class="fas fa-shopping-cart"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>products</h3>
+          <h4>$20</h4>
+        </article>
 
-
-
+        <div class="p-20 text-center">
+          <p class="text-yellow-400">test test test test test test test test test test test test test test test</p>
+        </div>
 
         <div class="p-20 text-center">
           <p class="text-yellow-400">test test test test test test test test test test test test test test test</p>
