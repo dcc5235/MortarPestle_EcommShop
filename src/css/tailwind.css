@@ -5,3 +5,7 @@
 #img-container:hover button {
   transform: translateX(0);
 }
+
+#basket {
+  min-width: 28rem;
+}
