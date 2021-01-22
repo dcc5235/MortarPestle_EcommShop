@@ -64,7 +64,7 @@
       }
     },
     {
-      "sys": { "id": "7" },
+      "sys": { "id": "8" },
       "fields": {
         "company": "Yves Saint Laurent",
         "title": "Rouge Smooth Shine Lip Crayon",
@@ -73,7 +73,7 @@
       }
     },
     {
-      "sys": { "id": "7" },
+      "sys": { "id": "9" },
       "fields": {
         "company": "Mortar & Pestle Collection",
         "title": "Rose & Hyaluronic Acid Deep Hydration Moisturizing Oil",
@@ -82,12 +82,30 @@
       }
     },
     {
-      "sys": { "id": "8" },
+      "sys": { "id": "10" },
       "fields": {
         "company": "Mortar & Pestle Collection",
         "title": "Picture Perfect Eyelash Curler",
         "price": 15.00,
         "image": { "fields": { "file": { "url": "./images/img12.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "11" },
+      "fields": {
+        "company": "Venus",
+        "title": "Liner To Go",
+        "price": 6.00,
+        "image": { "fields": { "file": { "url": "./images/img13.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "12" },
+      "fields": {
+        "company": "Mortar & Pestle Collection",
+        "title": "Matte Perfection Powder",
+        "price": 20.00,
+        "image": { "fields": { "file": { "url": "./images/img14.jpg" } } }
       }
     }
   ]
