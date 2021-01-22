@@ -1,4 +1,4 @@
-# Portfolio project for eccomerce site
+# Portfolio project for e-commerce site
 
 HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT
 
