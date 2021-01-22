@@ -10,3 +10,6 @@ const bagContent = document.querySelector('.bag-content'); // shopping bag conte
 const bagTotalItems = document.querySelector('#bag-total'); // total item count in nav
 const totalCosts = document.querySelector('#total-costs'); // total product costs in shopping bag section
 const products = document.querySelector('#products'); // products div container holding newly arrived products in products section
+
+// Main shopping bag
+let cart = [];
