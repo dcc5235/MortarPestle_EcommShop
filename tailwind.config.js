@@ -7,15 +7,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      cwc: {
-        orange: '#ff8400',
-        beige: '#f0f1f1',
-        gray: '#54575a',
-      }
-    },
+    }
   },
   variants: {
-    extend: {},
+    transform: ['focus', 'hover'],
+    extend: {
+      transform: ['focus', 'hover'],
+    },
   },
   plugins: [],
 }
