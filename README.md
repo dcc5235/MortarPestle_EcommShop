@@ -1,7 +1,8 @@
 # Portfolio project for eccomerce site
-work in progress
 
 HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT
+
+# A WORK IN PROGRESS
 
 ## Technologies & Installations
 
