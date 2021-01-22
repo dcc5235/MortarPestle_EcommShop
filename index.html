@@ -70,7 +70,7 @@
 
   <!-- BASKET/SHOPPING CART -->
   <!-- invisible (visibility: hidden) & fixed -->
-  <div class="container z-30 h-full mt-0 mr-0 transition duration-300 ease-in bg-yellow-500">
+  <div class="container z-30 h-full mt-0 mr-0 transition duration-300 ease-in">
     <!-- fixed  -->
     <div id="basket"
       class="container z-40 h-full p-6 mt-0 mb-8 mr-0 overflow-scroll tracking-widest text-center uppercase transition duration-300 ease-in translate-x-full bg-gray-100 md:w-4/12">
@@ -79,12 +79,12 @@
       </span>
       <h2 class="mb-8 font-bold tracking-widest">My Basket</h2>
       <div>
-        <div id="cart-item" class="grid w-16 h-16 mx-0 my-6 gap-x-6">
-          <img src="images/img4.jpg" alt="product sample" class="w-16 h-16" />
-          <div class="text-sm">
-            <h3 class="mt-4 tracking-widest uppercase">Mortar & Pestle Collection</h3>
-            <h4 class="tracking-widest text-yellow-500 normal-case ">Color Palette</h4>
-            <h5 class="mx-0 my-2 tracking-widest ">$14.00</h5>
+        <div id="cart-item" class="flex items-center justify-between mx-0 my-6 flex-nowrap">
+          <img src="images/img4.jpg" alt="product sample" class="w-16 h-16">
+          <div class="text-sm tracking-widest text-left">
+            <h3 class="mt-4 uppercase">Mortar & Pestle Collection</h3>
+            <h4 class="text-yellow-500 normal-case ">Color Palette</h4>
+            <h5 class="mx-0 my-2">$14.00</h5>
             <span class="text-gray-600 cursor-pointer">remove</span>
           </div>
           <div>
@@ -93,26 +93,27 @@
             <i class="text-yellow-500 cursor-pointer far fa-minus-square"></i>
           </div>
         </div>
-        <div class="mt-8 tracking-widest text-center">
-          <h3 class="mb-4 uppercase">estimated total: $
-            <span class="text-bold">30.00</span>
-          </h3>
-          <button
-            class="px-3 py-2 font-bold tracking-widest uppercase transition duration-300 ease-in bg-gray-100 border-2 border-yellow-500 cursor-pointer hover:bg-yellow-500 hover:text-white bg-opacity-80">empty
-            basket</button>
-        </div>
+      </div>
+      <div class="mt-8 tracking-widest text-center">
+        <h3 class="mb-4 uppercase">estimated total: $
+          <span class="text-bold">30.00</span>
+        </h3>
+        <button
+          class="px-3 py-2 font-bold tracking-widest uppercase transition duration-300 ease-in bg-gray-100 border-2 border-yellow-500 cursor-pointer hover:bg-yellow-500 hover:text-white bg-opacity-80">empty
+          basket</button>
       </div>
     </div>
+  </div>
 
 
-    <!-- TEST CONTAINER -->
-    <!-- <div class="flex items-center justify-center h-screen">
+  <!-- TEST CONTAINER -->
+  <!-- <div class="flex items-center justify-center h-screen">
     <div class="p-20 text-center">
       <p class="text-yellow-400 text-9xl">test test test test test test test test test test test test</p>
     </div>
   </div> -->
 
-    <script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
