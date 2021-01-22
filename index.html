@@ -23,11 +23,11 @@
         </span>
         <p class="text-2xl font-semibold">Mortar & Pestle</p>
       </div>
-      <div class="relative cursor-pointer">
+      <div id="bag-btn" class="relative cursor-pointer">
         <span class="text-2xl">
           <i class="fas fa-shopping-bag"></i>
         </span>
-        <div class="absolute bg-yellow-500 -top-2 -right-3 py-0 px-1.5 rounded-md text-white">0</div>
+        <div id="bag-total" class="absolute bg-yellow-500 -top-2 -right-3 py-0 px-1.5 rounded-md text-white">0</div>
       </div>
     </div>
   </nav>
@@ -48,7 +48,7 @@
   <section class="max-w-6xl px-0 py-16">
     <div class="mb-20 text-4xl tracking-widest text-center uppercase">
       <h2 id="shop" class="mb-20 text-4xl tracking-widest text-center uppercase">new arrivals</h2>
-      <div
+      <div id="products"
         class="grid w-screen max-w-6xl m-0 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto gap-x-6 gap-y-8">
         <article class="text-2xl text-center">
           <div id="img-container" class="relative overflow-hidden hover:opacity-50">
@@ -69,17 +69,15 @@
     </div>
   </section>
 
-  <!-- BASKET/SHOPPING CART -->
-  <!-- invisible (visibility: hidden) & fixed -->
-  <div class="container fixed z-30 invisible h-full mt-0 mr-0 transition duration-300 ease-in">
-    <!-- fixed  -->
+  <!-- BASKET/BAG/SHOPPING CART -->
+  <div id="basket-container" class="container fixed z-30 invisible h-full mt-0 mr-0 transition duration-300 ease-in">
     <div id="basket"
       class="container fixed z-40 h-full p-6 mt-0 mb-8 mr-0 overflow-scroll tracking-widest text-center uppercase transition duration-300 ease-in transform translate-x-full bg-gray-100 md:w-4/12">
-      <span class="text-3xl cursor-pointer">
+      <span id="close-bag" class="text-3xl cursor-pointer">
         <i class="fas fa-shopping-basket"></i>
       </span>
       <h2 class="mb-8 font-bold tracking-widest">My Basket</h2>
-      <div>
+      <div class="bag-content">
         <div id="cart-item" class="flex items-center justify-between mx-0 my-6 flex-nowrap">
           <img src="images/img4.jpg" alt="product sample" class="w-16 h-16">
           <div class="text-sm tracking-widest text-left">
@@ -97,9 +95,9 @@
       </div>
       <div class="mt-8 tracking-widest text-center">
         <h3 class="mb-4 uppercase">estimated total: $
-          <span class="text-bold">14.00</span>
+          <span id="total-costs" class="text-bold">14.00</span>
         </h3>
-        <button
+        <button id="empty-bag"
           class="px-3 py-2 font-bold tracking-widest uppercase transition duration-300 ease-in bg-gray-100 border-2 border-yellow-500 cursor-pointer hover:bg-yellow-500 hover:text-white bg-opacity-80">empty
           basket</button>
       </div>
