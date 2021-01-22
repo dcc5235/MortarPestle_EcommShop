@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "company": "Mortar & Pestle Collection",
+        "title": "Confident Energy Eyeshadow Palette",
+        "price": 14.00,
+        "image": { "fields": { "file": { "url": "./images/img3.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "company": "Urban Beauty",
+        "title": "Velvet Noir Big Volume Mascara",
+        "price": 27.50,
+        "image": { "fields": { "file": { "url": "./images/img4.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "company": "Institute",
+        "title": "Gentle Massager for Face & Neck",
+        "price": 52.00,
+        "image": { "fields": { "file": { "url": "./images/img5.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "company": "The Ordinary",
+        "title": "Natural Moisturizing Factors + HA",
+        "price": 5.80,
+        "image": { "fields": { "file": { "url": "./images/img6.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "company": "sweet",
+        "title": "Slight Blush",
+        "price": 14.00,
+        "image": { "fields": { "file": { "url": "./images/img7.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "company": "Mara Josephine",
+        "title": "100 percent Argan Oil",
+        "price": 49.00,
+        "image": { "fields": { "file": { "url": "./images/img8.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "company": "BOCCA",
+        "title": "Julietta Eau Rollerball",
+        "price": 30.00,
+        "image": { "fields": { "file": { "url": "./images/img9.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "company": "Yves Saint Laurent",
+        "title": "Rouge Smooth Shine Lip Crayon",
+        "price": 38.00,
+        "image": { "fields": { "file": { "url": "./images/img10.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "company": "Mortar & Pestle Collection",
+        "title": "Rose & Hyaluronic Acid Deep Hydration Moisturizing Oil",
+        "price": 12.00,
+        "image": { "fields": { "file": { "url": "./images/img11.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "company": "Mortar & Pestle Collection",
+        "title": "Picture Perfect Eyelash Curler",
+        "price": 15.00,
+        "image": { "fields": { "file": { "url": "./images/img12.jpg" } } }
+      }
+    }
+  ]
+}
