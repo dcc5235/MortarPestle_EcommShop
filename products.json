@@ -41,7 +41,7 @@
       "fields": {
         "company": "sweet",
         "title": "Slight Blush",
-        "price": 14.00,
+        "price": "14.00",
         "image": { "fields": { "file": { "url": "./images/img7.jpg" } } }
       }
     },
