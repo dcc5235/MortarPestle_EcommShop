@@ -13,3 +13,33 @@ const products = document.querySelector('#products'); // products div container 
 
 // Main shopping bag
 let cart = [];
+
+// Retrieves Products Data
+class Products {
+  async getProducts() { // retrieves data from local server (products.json)
+    try {
+      let result = await fetch('products.json');
+      let data = await result.json();
+
+      let products = data.items;
+      products = products.map(item => {
+        // destructuring to organize the data on return
+        const { id } = item.sys;
+        const { company, title, price } = item.fields;
+        const image = item.fields.image.fields.file.url;
+        return { id, company, title, price, image }
+      })
+      return products
+    } catch (error) {
+      console.log(error);
+    }
+  }
+}
+
+// Event Listeners
+
+document.addEventListener("DOMContentLoaded", () => { // Once content loads in DOM, then run the following...
+  const products = new Products();
+  // get all products and then, display data (products) in the console
+  products.getProducts().then(products => console.log(products));
+});
