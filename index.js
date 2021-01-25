@@ -1,6 +1,4 @@
 // VARIABLES
-
-// Declare the following variables, where each variable points at different IDs in the HTML
 const bagButton = document.querySelector('#bag-btn'); // shopping bag icon in nav
 const closeBag = document.querySelector('#close-bag'); // span element with shopping bag icon in shopping bag section
 const emptyBag = document.querySelector('#empty-bag'); // button element to empty shopping bag in shopping bag section
@@ -64,11 +62,22 @@ class Display {
   }
 }
 
+// Application: Local Storage
+class Storage {
+  static storeProducts(products) {
+    localStorage.setItem("products", JSON.stringify(products));
+  }
+}
+
 // Event Listeners
 
 document.addEventListener("DOMContentLoaded", () => { // Once content loads in DOM, then run the following...
   const display = new Display();
   const products = new Products();
-  // get all products and then, display data (products) in the user interface
-  products.getProducts().then(products => display.displayProducts(products));
+  // Chaining: get all products and then, 
+  // display data (products) in the user interface
+  products.getProducts().then(products => {
+    display.displayProducts(products);
+    Storage.storeProducts(products);
+  });
 });
