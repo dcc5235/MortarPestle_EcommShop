@@ -2,15 +2,17 @@
 const bagButton = document.querySelector('#bag-btn'); // shopping bag icon in nav
 const closeBag = document.querySelector('#close-bag'); // span element with shopping bag icon in shopping bag section
 const emptyBag = document.querySelector('#empty-bag'); // button element to empty shopping bag in shopping bag section
-const basket = document.querySelector('#basket'); // basket div container in shopping bag section
+const basketDiv = document.querySelector('#basket'); // basket div container in shopping bag section
 const basketContainer = document.querySelector('#basket-container'); // basket container that holds entire shopping bag in shopping bag section
 const bagContent = document.querySelector('.bag-content'); // shopping bag contents in shopping bag section
 const bagTotalItems = document.querySelector('#bag-total'); // total item count in nav
 const totalCosts = document.querySelector('#total-costs'); // total product costs in shopping bag section
 const productsDiv = document.querySelector('#products'); // products div container holding newly arrived products in products section
 
-// Main shopping bag
-let cart = [];
+// MAIN SHOPPING BAG
+let basket = [];
+// ALL BUTTONS
+let allButtons = [];
 
 // Retrieves Products Data
 class Products {
@@ -45,7 +47,7 @@ class Display {
           <div id="img-container" class="relative overflow-hidden hover:opacity-50 h-4/5">
             <img src=${product.image} alt="product"
               class="container block w-full min-h-full transition duration-300 ease-in">
-            <button
+            <button id="basket-btn"
               class="absolute px-3 py-2 font-bold tracking-widest uppercase transition duration-300 ease-in transform translate-x-full bg-gray-100 border-none cursor-pointer hover:bg-yellow-500 bg-opacity-80 top-3/4 -right-0"
               data-id=${product.id}>
               <i class="fas fa-shopping-basket"></i>
@@ -60,6 +62,26 @@ class Display {
     });
     productsDiv.innerHTML = result;
   }
+  // Select the Add to Basket Buttons 
+  selectBasketButtons() {
+    const buttons = [...document.querySelectorAll("#basket-btn")];
+    allButtons = buttons;
+
+    buttons.forEach(button => {
+      let id = button.dataset.id;
+      let insideBasket = basket.find(item => item.id === id);
+      if (insideBasket) {
+        button.innerText = "TEST";
+        button.disabled = true;
+      }
+      button.addEventListener('click', (event) => {
+        event.target.innerText = "TEST";
+        event.target.disabled = true;
+        let basketItem = Storage.getProduct(id);
+        console.log(basketItem);
+      });
+    });
+  }
 }
 
 // Application: Local Storage
@@ -67,17 +89,24 @@ class Storage {
   static storeProducts(products) {
     localStorage.setItem("products", JSON.stringify(products));
   }
+  static getProduct(id) {
+    let products = JSON.parse(localStorage.getItem('products'));
+    return products.find(product => product.id === id)
+  }
 }
 
 // Event Listeners
-
 document.addEventListener("DOMContentLoaded", () => { // Once content loads in DOM, then run the following...
   const display = new Display();
   const products = new Products();
   // Chaining: get all products and then, 
-  // display data (products) in the user interface
   products.getProducts().then(products => {
+    // display products in the user interface
     display.displayProducts(products);
+    // load products in local storage
     Storage.storeProducts(products);
+  }).then(() => {
+    // display inner text when basket is selected
+    display.selectBasketButtons();
   });
 });
