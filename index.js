@@ -77,12 +77,11 @@ class Display {
       button.addEventListener('click', (event) => {
         event.target.innerText = "TEST";
         event.target.disabled = true;
-        let basketItem = Storage.getProduct(id);
-        console.log(basketItem);
+        // get product data and correct ID from dataset attribute
+        let basketItem = { ...Storage.getProduct(id), amount: 1 };
       });
     });
   }
-}
 
 // Application: Local Storage
 class Storage {
