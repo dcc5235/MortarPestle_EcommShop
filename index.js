@@ -87,6 +87,8 @@ class Display {
         this.setBasketValues(basket);
         // display shopping bag items in the user interface
         this.addBasketItem(basketItem);
+        // show the shopping basket
+        this.showBasket();
       });
     });
   }
@@ -99,7 +101,8 @@ class Display {
       totalCost += item.price * item.amount;
       itemsTotal += item.amount;
     });
-    // bagContent.innerText = parseFloat(totalCost.toFixed(2)); this adds to the totalCost to the shopping bag div
+
+    totalCosts.innerText = totalCost.toFixed(2);
     bagTotalItems.innerText = itemsTotal;
   }
   // Adds shopping bag items to the basket for checkout
@@ -122,6 +125,11 @@ class Display {
       </div>
       `;
     bagContent.appendChild(div);
+  }
+  // Shows the shopping basket once a user clicks on the item
+  showBasket() {
+    basketContainer.classList.add("visibility");
+    basketDiv.classList.add("showBasket");
   }
 }
 
