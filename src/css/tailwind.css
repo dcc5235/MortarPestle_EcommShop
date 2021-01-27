@@ -10,3 +10,18 @@
   min-width: 28rem;
 }
 
+.visibility {
+  visibility: visible;
+}
+
+.showBasket {
+  transform: translateX(0);
+}
+
+.basket-item {
+  display:flex;
+  justify-content: space-between;
+  
+  align-items: center;
+  margin: 1.5rem 0;
+}
