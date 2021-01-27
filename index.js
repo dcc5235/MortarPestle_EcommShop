@@ -79,9 +79,12 @@ class Display {
         event.target.disabled = true;
         // get product data and correct ID from dataset attribute
         let basketItem = { ...Storage.getProduct(id), amount: 1 };
+        // add products to basket array (shopping basket/bag)
+        basket = [...basket, basketItem];
       });
     });
   }
+}
 
 // Application: Local Storage
 class Storage {
