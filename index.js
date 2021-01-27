@@ -71,18 +71,32 @@ class Display {
       let id = button.dataset.id;
       let insideBasket = basket.find(item => item.id === id);
       if (insideBasket) {
-        button.innerText = "TEST";
+        button.innerText = "ADDED";
         button.disabled = true;
       }
       button.addEventListener('click', (event) => {
-        event.target.innerText = "TEST";
+        event.target.innerText = "ADDED";
         event.target.disabled = true;
         // get product data and correct ID from dataset attribute
         let basketItem = { ...Storage.getProduct(id), amount: 1 };
         // add products to basket array (shopping basket/bag)
         basket = [...basket, basketItem];
+        // save entire shopping bag/basket to local storage
+        Storage.saveBasket(basket);
       });
     });
+  }
+  // Set values of shopping basket price and total items
+  setBasketValues(basket) {
+    let totalCost = 0;
+    let itemsTotal = 0;
+
+    basket.map(item => {
+      totalCost += item.price * item.amount;
+      itemsTotal += item.amount;
+    });
+    bagContent.innerText = parseFloat(totalCost.toFixed(2));
+    bagTotalItems.innerText = itemsTotal;
   }
 }
 
