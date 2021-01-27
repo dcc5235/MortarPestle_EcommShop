@@ -83,6 +83,8 @@ class Display {
         basket = [...basket, basketItem];
         // save entire shopping bag/basket to local storage
         Storage.saveBasket(basket);
+        // set all shopping bag values
+        this.setBasketValues(basket);
       });
     });
   }
