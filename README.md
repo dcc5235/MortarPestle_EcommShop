@@ -20,5 +20,7 @@ Products Page
 Shopping Bag
 
 <img src="https://pbs.twimg.com/media/EsTflkjXcAUXKGA?format=png&name=small" width="40%">
+<img src="https://pbs.twimg.com/media/EsxMJK-XAAEwP1R?format=jpg&name=medium" width="40%">
+
 
 
