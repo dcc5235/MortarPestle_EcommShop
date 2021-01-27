@@ -4,7 +4,7 @@
       "sys": { "id": "1" },
       "fields": {
         "company": "Mortar & Pestle Collection",
-        "title": "Confident Energy Eyeshadow Palette",
+        "title": "Confident Energy Palette",
         "price": "14.00",
         "image": { "fields": { "file": { "url": "./images/img3.jpg" } } }
       }
@@ -31,7 +31,7 @@
       "sys": { "id": "4" },
       "fields": {
         "company": "The Ordinary",
-        "title": "Natural Moisturizing Factors + HA",
+        "title": "Algae Moisturizing Factors + H",
         "price": "5.80",
         "image": { "fields": { "file": { "url": "./images/img6.jpg" } } }
       }
@@ -39,8 +39,8 @@
     {
       "sys": { "id": "5" },
       "fields": {
-        "company": "sweet",
-        "title": "Slight Blush",
+        "company": "sweetest rose Collection",
+        "title": "Luminescent Shimmer Blush 20",
         "price": "14.00",
         "image": { "fields": { "file": { "url": "./images/img7.jpg" } } }
       }
@@ -48,8 +48,8 @@
     {
       "sys": { "id": "6" },
       "fields": {
-        "company": "Mara Josephine",
-        "title": "100 percent Argan Oil",
+        "company": "Mara O. Joseph Collection",
+        "title": "100% Argan Oil Moisturizer",
         "price": "49.00",
         "image": { "fields": { "file": { "url": "./images/img8.jpg" } } }
       }
@@ -58,7 +58,7 @@
       "sys": { "id": "7" },
       "fields": {
         "company": "BOCCA",
-        "title": "Julietta Eau Rollerball",
+        "title": "Julietta Rose d'Arabi Eau Roller",
         "price": "30.00",
         "image": { "fields": { "file": { "url": "./images/img9.jpg" } } }
       }
@@ -76,7 +76,7 @@
       "sys": { "id": "9" },
       "fields": {
         "company": "Mortar & Pestle Collection",
-        "title": "Rose & Hyaluronic Acid Deep Hydration Moisturizing Oil",
+        "title": "Hyaluronic Acid Deep Hydration",
         "price": "12.00",
         "image": { "fields": { "file": { "url": "./images/img11.jpg" } } }
       }
@@ -93,8 +93,8 @@
     {
       "sys": { "id": "11" },
       "fields": {
-        "company": "Venus",
-        "title": "Liner To Go",
+        "company": "Boticelli Venus Collection",
+        "title": "Night & Day Liner To Go",
         "price": "6.00",
         "image": { "fields": { "file": { "url": "./images/img13.jpg" } } }
       }
