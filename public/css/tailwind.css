@@ -31227,6 +31227,21 @@ video {
   min-width: 28rem;
 }
 
+.visibility {
+  visibility: visible;
+}
+
+.showBasket {
+  transform: translateX(0);
+}
+
+.basket-item {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -183816,4 +183831,3 @@ video {
             animation: bounce 1s infinite;
   }
 }
-
