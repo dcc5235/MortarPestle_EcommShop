@@ -85,6 +85,8 @@ class Display {
         Storage.saveBasket(basket);
         // set all shopping bag values
         this.setBasketValues(basket);
+        // display shopping bag items in the user interface
+        this.addBasketItem(basketItem);
       });
     });
   }
@@ -97,8 +99,29 @@ class Display {
       totalCost += item.price * item.amount;
       itemsTotal += item.amount;
     });
-    bagContent.innerText = parseFloat(totalCost.toFixed(2));
+    // bagContent.innerText = parseFloat(totalCost.toFixed(2)); this adds to the totalCost to the shopping bag div
     bagTotalItems.innerText = itemsTotal;
+  }
+  // Adds shopping bag items to the basket for checkout
+  addBasketItem(item) {
+    const div = document.createElement('div');
+    div.classList.add('basket-item');
+    div.innerHTML =
+      `
+      <img src=${item.image} alt="product sample" class="w-16 h-16" />
+      <div class="text-sm tracking-widest text-left">
+        <h3 class="mt-4 uppercase">${item.company}</h3>
+        <h4 class="text-yellow-500 normal-case">${item.title}</h4>
+        <h5 class="mx-0 my-2">$${item.price}</h5>
+        <span class="remove-item text-xs text-gray-600 cursor-pointer" data-id=${item.id}>remove</span>
+      </div>
+      <div>
+        <i class="text-yellow-500 cursor-pointer far fa-plus-square" data-id=${item.id}></i>
+        <p class="text-center">${item.amount}</p>
+        <i class="text-yellow-500 cursor-pointer far fa-minus-square" data-id=${item.id}></i>
+      </div>
+      `;
+    bagContent.appendChild(div);
   }
 }
 
