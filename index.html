@@ -54,26 +54,30 @@
   </section>
 
   <!-- BASKET/BAG/SHOPPING CART -->
-  <!-- fixed -->
-  <div id="basket-container" class="container z-30 invisible h-full mt-0 mr-0 transition duration-300 ease-in">
-    <!-- fixed -->
+  <div id="basket-container"
+    class="container fixed top-0 right-0 z-30 invisible h-full mt-0 mr-0 transition duration-300 ease-in md:w-4/12">
     <div id="basket"
-      class="container z-40 h-full p-6 mt-0 mb-8 mr-0 overflow-scroll tracking-widest text-center uppercase transition duration-300 ease-in transform translate-x-full bg-gray-100 md:w-4/12">
-      <span id="close-bag" class="text-3xl cursor-pointer">
+      class="container fixed top-0 right-0 z-40 h-full p-6 mt-0 mr-0 overflow-scroll tracking-widest text-center uppercase transition duration-300 ease-in transform translate-x-full bg-gray-100 lg:w-4/12 md:w-4/12">
+      <span id="close-bag" class="fixed top-0 left-0 mt-2 ml-6 text-2xl cursor-pointer">
+        <i class="fas fa-times"></i>
+      </span>
+      <span class="text-3xl ">
         <i class="fas fa-shopping-basket"></i>
       </span>
-      <h2 class="mb-8 font-bold tracking-widest">My Basket</h2>
+      <h2 class="font-bold tracking-widest">My Basket</h2>
       <div class="bag-content">
         <div class="basket-item">
 
         </div>
+        <hr>
       </div>
       <div class="mt-8 tracking-widest text-center">
-        <h3 class="mb-4 uppercase">estimated total: $
+        <hr>
+        <h3 class="my-4 uppercase">estimated total: $
           <span id="total-costs" class="text-bold">14.00</span>
         </h3>
-        <button id="empty-bag"
-          class="px-3 py-2 font-bold tracking-widest uppercase transition duration-300 ease-in bg-gray-100 border-2 border-yellow-500 cursor-pointer hover:bg-yellow-500 hover:text-white bg-opacity-80">empty
+        <button id="checkout-bag"
+          class="px-3 py-2 font-bold tracking-widest uppercase transition duration-300 ease-in bg-gray-100 border-2 border-yellow-500 cursor-pointer hover:bg-yellow-500 hover:text-white bg-opacity-80">checkout
           basket</button>
       </div>
     </div>
