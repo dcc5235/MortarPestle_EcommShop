@@ -1,7 +1,7 @@
 // VARIABLES
 const bagButton = document.querySelector('#bag-btn'); // shopping bag icon in nav
 const closeBag = document.querySelector('#close-bag'); // span element with shopping bag icon in shopping bag section
-const emptyBag = document.querySelector('#empty-bag'); // button element to empty shopping bag in shopping bag section
+const checkoutBag = document.querySelector('#checkout-bag'); // button element to send users to checkout
 const basketDiv = document.querySelector('#basket'); // basket div container in shopping bag section
 const basketContainer = document.getElementById('basket-container'); // basket container that holds entire shopping bag in shopping bag section
 const bagContent = document.querySelector('.bag-content'); // shopping bag contents in shopping bag section
