@@ -131,6 +131,28 @@ class Display {
     basketContainer.classList.add("visibility");
     basketDiv.classList.add("showBasket");
   }
+  //
+  displayBasket() {
+    // the moment the application opens, the basket array will be assigned values from storage
+    basket = Storage.getBasket();
+    // set up the values in the DOM
+    this.setBasketValues(basket);
+    // display any UI for the items in the basket
+    this.populateBasket(basket);
+    // opens the basket when basket icon is clicked
+    bagButton.addEventListener('click', this.showBasket);
+    // closes the basket when close icon is clicked
+    closeBag.addEventListener('click', this.hideBasket);
+  }
+  // Populates basket item (if there are items, display the UI)
+  populateBasket(basket) {
+    basket.forEach(item => this.addBasketItem(item));
+  }
+  // Remove the basket visibility
+  hideBasket() {
+    basketContainer.classList.remove("visibility");
+    basketDiv.classList.remove("showBasket");
+  }
 }
 
 // Application: Local Storage
@@ -145,12 +167,19 @@ class Storage {
   static saveBasket(basket) {
     localStorage.setItem("basket", JSON.stringify(basket));
   }
+  // Returns a value from local storage, then displays the values in the basket array
+  static getBasket() {
+    return localStorage.getItem("basket") ? JSON.parse(localStorage.getItem("basket")) : [];
+  }
 }
 
 // Event Listeners
 document.addEventListener("DOMContentLoaded", () => { // Once content loads in DOM, then run the following...
   const display = new Display();
   const products = new Products();
+
+  // display and hide shopping bag
+  display.displayBasket();
   // Chaining: get all products and then, 
   products.getProducts().then(products => {
     // display products in the user interface
