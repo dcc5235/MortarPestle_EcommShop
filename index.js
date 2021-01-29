@@ -145,12 +145,17 @@ class Storage {
   static saveBasket(basket) {
     localStorage.setItem("basket", JSON.stringify(basket));
   }
+  // Returns a value from local storage, then displays the values in the basket array
+  static getBasket() {
+    return localStorage.getItem("basket") ? JSON.parse(localStorage.getItem("basket")) : [];
+  }
 }
 
 // Event Listeners
 document.addEventListener("DOMContentLoaded", () => { // Once content loads in DOM, then run the following...
   const display = new Display();
   const products = new Products();
+
   // Chaining: get all products and then, 
   products.getProducts().then(products => {
     // display products in the user interface
