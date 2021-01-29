@@ -131,7 +131,7 @@ class Display {
     basketContainer.classList.add("visibility");
     basketDiv.classList.add("showBasket");
   }
-  //
+  // Displays the basket contents when items are added
   displayBasket() {
     // the moment the application opens, the basket array will be assigned values from storage
     basket = Storage.getBasket();
@@ -152,6 +152,39 @@ class Display {
   hideBasket() {
     basketContainer.classList.remove("visibility");
     basketDiv.classList.remove("showBasket");
+  }
+  // Basket functionality 
+  updateBasket() {
+    bagContent.addEventListener('click', event => {
+      if (event.target.classList.contains("remove-item")) {
+        let removeItem = event.target;
+        let id = removeItem.dataset.id;
+
+        // removes item from the DOM
+        bagContent.removeChild(removeItem.parentElement.parentElement);
+        // removes item from the cart but not the DOM
+        this.removeItem(id);
+      }
+    });
+  }
+  // Removes item based on ID from basket
+  removeItem(id) {
+    // filter the cart and return all items without specific IDs (updates the cart)
+    basket = basket.filter(item => item.id !== id);
+    this.setBasketValues(basket);
+    // refresh the page, basket value save and retrieved from storage
+    Storage.saveBasket(basket);
+
+    // access the button that was previously disabled and enable add to basket 
+    let button = this.resetButton(id);
+
+    button.disabled = false;
+    button.innerHTML =
+      `<i class="fas fa-shopping-basket"></i>add to basket`;
+  }
+  // Find button with attribute dataset.id equal to the id that was used to add item into the cart & reset the button
+  resetButton(id) {
+    return allButtons.find(button => button.dataset.id === id);
   }
 }
 
@@ -189,5 +222,7 @@ document.addEventListener("DOMContentLoaded", () => { // Once content loads in D
   }).then(() => {
     // display inner text when basket is selected
     display.selectBasketButtons();
+    // logic within the shopping basket to remove, add items
+    display.updateBasket();
   });
 });
