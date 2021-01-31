@@ -10,10 +10,12 @@
   <link href="/public/css/tailwind.css" type="text/css" rel="stylesheet">
 </head>
 
-<body class="max-w-6xl m-auto">
+<!-- max-w-6xl -->
+
+<body>
   <!-- NAVBAR -->
-  <nav class="sticky top-0 z-10 flex items-center max-w-6xl bg-gray-100 bg-opacity-90 h-14 ">
-    <div class="container flex items-center justify-between max-w-6xl px-6 py-0">
+  <nav class="sticky top-0 z-10 flex items-center bg-gray-100 bg-opacity-90 h-14">
+    <div class="container flex items-center justify-between max-w-6xl px-6 py-0 m-auto">
       <span class="text-2xl">
         <i class="fas fa-bars"></i>
       </span>
@@ -33,7 +35,7 @@
   </nav>
 
   <!-- BANNER/HERO -->
-  <header class="flex items-center justify-center h-screen max-w-6xl bg-center bg-no-repeat bg-cover "
+  <header class="flex items-center justify-center h-screen bg-center bg-no-repeat bg-cover "
     style="background-image: url(images/img2.jpg)">
     <div class="inline-block p-8 text-center bg-gray-200 bg-opacity-70">
       <h1 class="mb-12 text-5xl font-bold tracking-widest uppercase">Latest Collection</h1>
@@ -44,8 +46,8 @@
   </header>
 
   <!-- PRODUCTS -->
-  <section class="max-w-6xl px-0 py-16">
-    <div class="mb-20 text-4xl tracking-widest text-center uppercase">
+  <section class="max-w-6xl px-0 pt-16 m-auto">
+    <div class="mb-4 text-4xl tracking-widest text-center uppercase">
       <h2 id="shop" class="mb-20 text-4xl tracking-widest text-center uppercase">new arrivals</h2>
       <div id="products"
         class="grid w-screen max-w-6xl m-0 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto gap-x-6 gap-y-8">
@@ -83,19 +85,54 @@
     </div>
   </div>
 
+  <!-- FOOTER -->
   <footer>
-    <div class="flex items-center justify-center pt-16 bg-gray-100 bg-opacity-90">
-      <div class="text-sm text-yellow-400">
-        <p>© 2021 Mortar & Pestle, Inc. All rights reserved.</p>
+    <div class="flex flex-col items-center py-8 bg-gray-100 bg-opacity-90 z-60">
+      <div class="container flex items-center max-w-6xl m-auto text-sm text-yellow-400">
+        <a href="#" class="flex flex-row pr-8">
+          <i class="pr-2 text-2xl fas fa-store-alt"></i>
+          <span class="flex flex-col">
+            <span class="font-bold text-black">Find a Store</span>
+            <span class="text-black">Mortar & Pestle Woodfield Mall</span>
+          </span>
+        </a>
+        <a href="#" class="flex flex-row pr-8">
+          <i class="pr-2 text-2xl far fa-comment-dots"></i>
+          <span class="flex flex-col">
+            <span class="font-bold text-black">Customer Service Chat</span>
+            <span class="text-black">Available</span>
+          </span>
+        </a>
+        <a href="#" class="flex flex-row pr-8">
+          <i class="pr-2 text-2xl fas fa-phone-square-alt"></i>
+          <span class="flex flex-col">
+            <span class="font-bold text-black">1-877-123-4567</span>
+            <span class="text-black">TTY: 1-888-888-1234</span>
+          </span>
+        </a>
+        <a href="#" class="flex flex-row pr-8">
+          <i class="pr-2 text-2xl fas fa-mobile-alt"></i>
+          <span class="flex flex-col">
+            <span class="font-bold text-black">Download the App</span>
+            <span class="text-black">Text “APP” to 12345</span>
+          </span>
+        </a>
+      </div>
+      <div class="container max-w-6xl m-auto">
+        <hr class="my-8">
+      </div>
+      <div class="container max-w-6xl m-auto">
+        <p class="text-sm">© 2021 Mortar & Pestle, Inc. All rights reserved.</p>
       </div>
     </div>
   </footer>
+
   <!-- TEST CONTAINER -->
   <!-- <div class="flex items-center justify-center h-screen">
     <div class="p-20 text-center">
       <p class="text-yellow-400 text-9xl">test test test test test test test test test test test test</p>
     </div>
-  </div> -->
+  </div>-->
 
   <script src="index.js"></script>
 </body>
