@@ -23,4 +23,5 @@ Shopping Bag
 <img src="https://pbs.twimg.com/media/EsxMJK-XAAEwP1R?format=jpg&name=medium" width="40%">
 
 
-
+Footer
+<img src="https://pbs.twimg.com/media/EtCMuL-XAAwroH1?format=jpg&name=large" width="40%">
