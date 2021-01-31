@@ -111,7 +111,7 @@ class Display {
     div.classList.add('basket-item');
     div.innerHTML =
       `
-      <img src=${item.image} alt="product sample" class="w-16 h-16" />
+      <img src=${item.image} alt="product sample" class="w-16 h-20" />
       <div class="text-sm tracking-widest text-left">
         <h3 class="mt-4 uppercase">${item.company}</h3>
         <h4 class="text-yellow-500 normal-case">${item.title}</h4>
@@ -119,9 +119,9 @@ class Display {
         <span class="remove-item text-xs text-gray-600 cursor-pointer" data-id=${item.id}>remove</span>
       </div>
       <div>
-        <i class="text-yellow-500 cursor-pointer far fa-plus-square" data-id=${item.id}></i>
+        <i id="increment" class="cursor-pointer text-yellow-500 far fa-plus-square" data-id=${item.id}></i>
         <p class="text-center">${item.amount}</p>
-        <i class="text-yellow-500 cursor-pointer far fa-minus-square" data-id=${item.id}></i>
+        <i id="decrement" class="cursor-pointer text-yellow-500 far fa-minus-square" data-id=${item.id}></i>
       </div>
       `;
     bagContent.appendChild(div);
@@ -162,8 +162,35 @@ class Display {
 
         // removes item from the DOM
         bagContent.removeChild(removeItem.parentElement.parentElement);
-        // removes item from the cart but not the DOM
+        // removes item from the basket but not the DOM
         this.removeItem(id);
+      } else if (event.target.classList.contains("fa-plus-square")) {
+        let incrementItems = event.target;
+        let id = incrementItems.dataset.id;
+        let temporaryItem = basket.find(item => item.id === id);
+
+        // updates basket values
+        temporaryItem.amount = temporaryItem.amount + 1;
+        // updates above value into local storage
+        Storage.saveBasket(basket);
+        // set values of shopping basket price and total items
+        this.setBasketValues(basket);
+        // access the element and change the innerText to new amount
+        incrementItems.nextElementSibling.innerText = temporaryItem.amount;
+      } else if (event.target.classList.contains("fa-minus-square")) {
+        let decrementItems = event.target;
+        let id = decrementItems.dataset.id;
+        let temporaryItem = basket.find(item => item.id === id);
+
+        temporaryItem.amount = temporaryItem.amount - 1;
+        if (temporaryItem.amount > 0) {
+          Storage.saveBasket(basket);
+          this.setBasketValues(basket);
+          decrementItems.previousElementSibling.innerText = temporaryItem.amount;
+        } else {
+          bagContent.removeChild(decrementItems.parentElement.parentElement);
+          this.removeItem(id)
+        }
       }
     });
   }
