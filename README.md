@@ -24,4 +24,5 @@ Shopping Bag
 
 
 Footer
+
 <img src="https://pbs.twimg.com/media/EtCMuL-XAAwroH1?format=jpg&name=large" width="40%">
