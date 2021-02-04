@@ -154,30 +154,30 @@
   <!-- FOOTER -->
   <footer>
     <div class="flex flex-col items-center py-8 bg-white bg-opacity-90 z-60 sm:px-4">
-      <div class="container flex items-center max-w-6xl m-auto text-yellow-400">
-        <a href="#" class="flex w-2/12 pr-3 md:flex-row sm:flex-col">
+      <div class="container flex flex-col max-w-6xl pl-8 m-auto text-yellow-400 sm:items-center sm:pl-0">
+        <a href="#" class="flex pr-3 mb-4 sm:w-2/12 md:flex-row sm:flex-col sm:mb-0">
           <i class="pr-2 text-2xl fas fa-store-alt"></i>
           <span class="flex flex-col text-xs">
-            <span class="font-bold text-black">Find a Store</span>
+            <span class="text-lg font-bold text-black sm:text-base">Find a Store</span>
             <span class="text-black">Shop at Woodfield Mall</span>
           </span>
         </a>
-        <a href="#" class="flex flex-row w-2/12 pr-3">
-          <i class="pr-2 text-2xl far fa-comment-dots"></i>
+        <a href="#" class="flex flex-row pr-3 mb-4 sm:w-2/12 sm:mb-0">
+          <i class="pr-2 text-3xl sm:text-2xl far fa-comment-dots"></i>
           <span class="flex flex-col text-xs">
-            <span class="font-bold text-black">Customer Service Chat</span>
+            <span class="text-lg font-bold text-black sm:text-base">Customer Service Chat</span>
             <span class="text-black">Available</span>
           </span>
         </a>
-        <a href="#" class="flex flex-row w-2/12 pr-3">
-          <i class="pr-2 text-2xl fas fa-phone-square-alt"></i>
+        <a href="#" class="flex flex-row pr-3 mb-4 sm:w-2/12 sm:mb-0">
+          <i class="pr-3 text-3xl sm:pr-2 sm:text-2xl fas fa-phone-square-alt"></i>
           <span class="flex flex-col text-xs">
-            <span class="font-bold text-black">1-877-123-4567</span>
+            <span class="text-lg font-bold text-black sm:text-base">1-877-123-4567</span>
             <span class="text-black">TTY: 1-888-888-1234</span>
           </span>
         </a>
-        <a href="#" class="flex flex-row w-2/12 pr-3">
-          <i class="pr-2 text-2xl fas fa-mobile-alt"></i>
+        <a href="#" class="flex flex-row hidden pr-3 mb-4 sm:w-2/12 sm:mb-0 sm:flex sm:contents">
+          <i class="pr-2 text-3xl sm:text-2xl fas fa-mobile-alt"></i>
           <span class="flex flex-col text-xs">
             <span class="font-bold text-black">Download the App</span>
             <span class="text-black">Text “APP” to 12345</span>
@@ -186,13 +186,16 @@
       </div>
 
       <div class="container max-w-6xl m-auto">
-        <hr class="my-8">
+        <hr class="my-4 sm:my-8">
       </div>
 
-      <div class="flex justify-between max-w-6xl m-auto">
-        <div class="w-3/12 px-3">
-          <p class="text-base font-bold uppercase">About Us</p>
-          <div>
+      <div class="flex flex-col justify-between max-w-6xl px-8 m-auto mt-4 sm:mt-0 sm:flex-row sm:px-0">
+        <div class="flex justify-between py-4 sm:px-3 sm:w-3/12 sm:py-0">
+          <p class="text-lg font-bold uppercase sm:text-base">About Us</p>
+          <span>
+            <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square"></i>
+          </span>
+          <div class="hidden sm:contents">
             <ul class="text-sm list-none">
               <li class="cursor-pointer hover:underline">About Mortar & Pestle</li>
               <li class="cursor-pointer hover:underline">Careers</li>
@@ -204,9 +207,12 @@
           </div>
         </div>
 
-        <div class="w-3/12 px-3">
-          <p class="text-base font-bold uppercase">Guest Services</p>
-          <div>
+        <div class="flex justify-between py-4 sm:px-3 sm:w-3/12 sm:py-0">
+          <p class="text-lg font-bold uppercase sm:text-base">Guest Services</p>
+          <span>
+            <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square"></i>
+          </span>
+          <div class="hidden sm:contents">
             <ul class="text-sm list-none">
               <li class="cursor-pointer hover:underline">Guest Services Center</li>
               <li class="cursor-pointer hover:underline">Order Status</li>
@@ -223,9 +229,12 @@
           </div>
         </div>
 
-        <div class="w-3/12 px-3">
-          <h2 class="font-bold uppercase">My Rewards</h2>
-          <div>
+        <div class="flex justify-between py-4 sm:px-3 sm:w-3/12 sm:py-0">
+          <h2 class="text-lg font-bold uppercase sm:text-base">My Rewards</h2>
+          <span>
+            <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square"></i>
+          </span>
+          <div class="hidden sm:contents">
             <ul class="text-sm list-none">
               <li class="cursor-pointer hover:underline">My Rewards Program</li>
               <li class="cursor-pointer hover:underline">Purchase History</li>
@@ -238,9 +247,12 @@
           </div>
         </div>
 
-        <div class="w-3/12 px-3">
-          <p class="text-base font-bold uppercase">Our Formulas</p>
-          <div>
+        <div class="flex justify-between py-4 sm:px-3 sm:w-3/12 sm:py-0">
+          <p class="text-lg font-bold uppercase sm:text-base">Our Formulas</p>
+          <span>
+            <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square"></i>
+          </span>
+          <div class="hidden sm:contents">
             <ul class="text-sm list-none">
               <li class="cursor-pointer hover:underline">No Parabens</li>
               <li class="cursor-pointer hover:underline">No Phthalates</li>
@@ -250,8 +262,13 @@
           </div>
         </div>
 
-        <div class="px-3">
-          <h1 class="text-5xl font-bold text-yellow-500 uppercase mb-28">Bringing back the basics</h1>
+        <div class="container max-w-6xl m-auto">
+          <hr class="my-4 sm:my-8">
+        </div>
+
+        <div class="sm:px-3">
+          <h1 class="my-4 text-4xl font-bold text-yellow-500 uppercase sm:text-5xl sm:mb-28">Bringing back the basics
+          </h1>
           <div>
             <label for="email" class="mb-1 text-sm uppercase m-0.5 block">Sign up for our emails</label>
             <div class="flex items-start flex-1">
@@ -268,8 +285,8 @@
         <hr class="my-8">
       </div>
 
-      <div class="container max-w-6xl m-auto">
-        <p class="text-sm">© 2021 Mortar & Pestle, Inc. All rights reserved.</p>
+      <div class="container max-w-6xl px-8 m-auto sm:px-0">
+        <p class="text-xs sm:text-sm">© 2021 Mortar & Pestle, Inc. All rights reserved.</p>
       </div>
     </div>
   </footer>
