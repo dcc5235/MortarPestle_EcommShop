@@ -12,16 +12,21 @@
 <body>
   <!-- NAVBAR -->
   <nav class="sticky top-0 z-10 flex items-center h-16 bg-white">
-    <div class="container flex items-center justify-between max-w-6xl px-6 py-0 m-auto">
+    <div class="container flex items-center max-w-6xl px-4 py-0 sm:px-6 sm:m-auto sm:justify-between">
       <div id="logo" class="flex items-center">
-        <span class="m-2 text-2xl text-yellow-500">
+        <span class="m-2 text-2xl text-yellow-500 sm:text-2xl">
           <i class="fas fa-mortar-pestle"></i>
         </span>
-        <p class="text-3xl font-semibold">Mortar & Pestle</p>
+        <p class="text-3xl font-semibold w-max">Mortar & Pestle</p>
       </div>
-      <div class="container flex flex-row-reverse items-center">
+      <!-- MOBILE -->
+      <span class="justify-end text-2xl sm:invisible">
+        <i class="fas fa-bars"></i>
+      </span>
+      <!-- END MOBILE -->
+      <div class="container items-center hidden sm:flex sm:flex-row-reverse sm:visible">
         <div class="flex items-center">
-          <a href="#shop"><button
+          <a href="http://127.0.0.1:5500/index.html"><button
               class="px-6 py-2 text-base tracking-wide uppercase bg-yellow-400 border-2 border-yellow-400 outline-none cursor-pointer hover:bg-yellow-400 hover:text-white">Shop
               the latest</button></a>
         </div>
@@ -48,7 +53,7 @@
         class="flex flex-col items-center justify-center max-w-screen-sm px-8 py-0 text-center bg-gray-100 bg-opacity-70">
         <h1 class="mb-5 text-5xl font-bold tracking-widest uppercase">Get the Latest Items</h1>
         <h3 class="mb-5 text-2xl font-normal tracking-wide uppercase">Animal-Cruelty Free.</h3>
-        <a href="#shop"><button
+        <a href="http://127.0.0.1:5500/index.html"><button
             class="px-12 py-4 text-base tracking-widest uppercase bg-yellow-400 border-2 border-yellow-400 shadow-lg outline-none cursor-pointer hover:bg-transparent">shop
             now</button></a>
         <h4 class="mt-4 text-lg tracking-wide light"> Be the first to have the latest, premium
@@ -105,7 +110,7 @@
         <i class="far fa-times-circle"></i>
         <p class="ml-1">No Parabens or Sulfates</p>
       </div>
-      <div> <a href="#shop"><button
+      <div> <a href="http://127.0.0.1:5500/index.html"><button
             class="px-12 py-4 text-base font-bold tracking-widest uppercase bg-yellow-400 border-2 border-yellow-400 shadow-lg outline-none cursor-pointer hover:text-black">shop
             now</button></a></div>
       <div class="flex items-center font-bold uppercase">
