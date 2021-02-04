@@ -28,7 +28,7 @@ class Display {
     let result = '';
     reps.forEach(rep => {
       result += `
-      <div id="img-container" class="h-4/5">
+      <div id="img-container" class="h-4/5 mx-8 sm:mx-0">
           <p class="text-xl text-black">${rep.name}</p>
           <p class="mb-2 uppercase">${rep.title}</p>
           <img src=${rep.image} alt="customer" class="w-full h-full shadow-lg hover:opacity-50">
