@@ -12,12 +12,12 @@
 <body>
   <!-- NAVBAR -->
   <nav class="sticky top-0 z-10 flex items-center h-16 bg-white">
-    <div class="container flex items-center max-w-6xl px-4 py-0 sm:px-6 sm:m-auto sm:justify-between">
+    <div class="container flex items-center max-w-6xl px-4 py-0 md:px-6 sm:m-auto sm:justify-between">
       <div id="logo" class="flex items-center">
-        <span class="m-2 text-2xl text-yellow-500 sm:text-2xl">
+        <span class="m-2 text-2xl text-yellow-500 sm:text-xl">
           <i class="fas fa-mortar-pestle"></i>
         </span>
-        <p class="text-3xl font-semibold w-max">Mortar & Pestle</p>
+        <p class="text-3xl font-semibold w-max sm:text-xl">Mortar & Pestle</p>
       </div>
       <!-- MOBILE -->
       <span class="justify-end text-2xl sm:invisible">
@@ -25,18 +25,18 @@
       </span>
       <!-- END MOBILE -->
       <div class="container items-center hidden sm:flex sm:flex-row-reverse sm:visible">
-        <div class="flex items-center">
+        <div class="flex items-center sm:w-max">
           <a href="http://127.0.0.1:5500/index.html"><button
-              class="px-6 py-2 text-base tracking-wide uppercase bg-yellow-400 border-2 border-yellow-400 outline-none cursor-pointer hover:bg-yellow-400 hover:text-white">Shop
+              class="px-2 py-2 text-base tracking-wide uppercase bg-yellow-400 border-2 border-yellow-400 outline-none cursor-pointer md:px-6 hover:bg-yellow-400 hover:text-white">Shop
               the latest</button></a>
         </div>
-        <div class="flex items-center pr-6 cursor-pointer hover:text-yellow-500">
+        <div class="flex items-center pr-2 cursor-pointer md:pr-6 hover:text-yellow-500">
           <span class="m-2 text-xl text-yellow-400">
             <i class="fas fa-clipboard-check"></i>
           </span>
           <p class="text-base uppercase">Login</p>
         </div>
-        <div class="flex items-center pr-6 cursor-pointer hover:text-yellow-500">
+        <div class="flex items-center pr-2 cursor-pointer md:pr-6 hover:text-yellow-500">
           <span class="m-2 text-xl text-yellow-400">
             <i class="fas fa-gift"></i>
           </span>
@@ -48,18 +48,23 @@
 
   <!-- BANNER/HERO -->
   <header id="header" class="flex items-center justify-center bg-center bg-cover">
-    <div class="flex flex-col justify-center m-auto sm:flex-row-reverse">
-      <div class="container block">
-        <img src="images/img16.jpg" alt="cosmetic products with sale sign" class="container">
+    <div class="flex flex-col justify-center m-auto lg:flex-row-reverse">
+      <div>
+        <img src="images/img16.jpg" alt="cosmetic products with sale sign" class="lg:container">
       </div>
       <div
-        class="flex flex-col items-center justify-center max-w-screen-sm p-8 text-center bg-gray-100 sm:px-8 sm:py-0 bg-opacity-70">
-        <h1 class="mb-6 text-4xl font-bold tracking-widest uppercase sm:text-5xl sm:mb-5">Get the Latest Items</h1>
-        <h3 class="mb-6 text-2xl font-normal tracking-wide uppercase sm:mb-5">Animal-Cruelty Free.</h3>
+        class="flex flex-col items-center justify-center max-w-screen-sm p-8 text-center bg-gray-100 sm:max-w-screen-md sm:px-16 sm:py-8 bg-opacity-70 md:max-w-screen-lg lg:px-4">
+        <h1
+          class="mb-6 text-4xl font-bold tracking-widest uppercase sm:text-5xl sm:mt-6 md:text-7xl md:mb-8 lg:text-5xl">
+          Get the
+          Latest
+          Items
+        </h1>
+        <h3 class="mb-6 text-2xl font-normal tracking-wide uppercase sm:mb-5 md:mb-10">Animal-Cruelty Free.</h3>
         <a href="http://127.0.0.1:5500/index.html"><button
             class="px-12 py-4 text-base tracking-widest uppercase bg-yellow-400 border-2 border-yellow-400 shadow-lg outline-none cursor-pointer hover:bg-transparent">shop
             now</button></a>
-        <h4 class="mt-6 text-lg tracking-wide sm:mt-4 light"> Be the first to have the latest, premium
+        <h4 class="mt-6 text-lg tracking-wide sm:mb-6 md:mt-8"> Be the first to have the latest, premium
           products delivered to your door.</h4>
       </div>
     </div>
@@ -72,7 +77,7 @@
         how it works
       </h2>
       <div
-        class="grid max-w-6xl py-4 m-0 sm:w-screen xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 auto-rows-auto gap-x-3 gap-y-8">
+        class="grid max-w-6xl py-4 m-0 sm:w-screen xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 auto-rows-auto gap-x-3 gap-y-8 md:w-full">
         <div class="flex flex-col items-center">
           <img
             src="https://s3-us-west-2.amazonaws.com/abtesting-assets/gtb_master_12720_rollover/img/ico-customize-b.svg"
@@ -104,8 +109,8 @@
   </div>
 
   <!-- CTA BREAK -->
-  <div class="text-lg tracking-wide text-center text-white bg-black py-7 ">
-    <div class="container flex flex-col items-center max-w-6xl px-6 py-0 m-auto sm:justify-between">
+  <div class="text-lg tracking-wide text-center text-white bg-black py-7">
+    <div class="container flex flex-col items-center max-w-6xl px-6 py-0 m-auto sm:justify-between md:flex-row">
       <div class="flex items-center mb-6 font-bold uppercase sm:mb-0">
         <i class="far fa-times-circle"></i>
         <p class="ml-1">No Parabens or Sulfates</p>
@@ -123,12 +128,17 @@
   </div>
 
   <!-- VIP INSIDER COMMUNITY -->
-  <section class="=px-0 m-auto">
-    <div class="flex items-center justify-center bg-purple-100">
-      <div class="flex flex-col pt-16 pb-16 text-left sm:pb-32 sm:max-w-6xl">
-        <div class="text-center sm:w-8/12">
-          <h2 class="text-4xl font-bold underline uppercase sm:mb-4">VIP Insider Community</h2>
-          <p class="py-8 mx-8 text-base tracking-wider sm:text-lg sm:pr-8">Still not convinced? Check out our Mortar &
+  <section class="px-0 m-auto">
+    <div class="flex items-center bg-purple-100 sm:justify-center">
+      <div class="flex flex-col pt-16 pb-16 text-left sm:pb-32 sm:max-w-6xl lg:flex-row md:pb-8 lg:pb-16">
+        <div class="pl-8 sm:pl-0 sm:text-center sm:w-8/12 md:w-full lg:text-left lg:pl-8 lg:w-2/6">
+          <h2 class="text-4xl font-bold underline uppercase sm:mb-4 md:text-6xl lg:text-3xl">VIP Insider
+            Community</h2>
+          <p class="py-8 pr-4 mr-8 text-base tracking-wider sm:text-lg sm:pr-8 md:w-full md:px-16 lg:pl-0 lg:pr-4">
+            Still not
+            convinced? Check
+            out our
+            Mortar &
             Pestle
             Community
             where
@@ -144,8 +154,7 @@
         </div>
 
         <div id="reps"
-          class="grid w-screen max-w-6xl grid-cols-1 m-0 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto gap-x-6 sm:gap-y-16 gap-y-8">
-
+          class="grid w-screen max-w-6xl grid-cols-1 m-0 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto gap-x-6 sm:gap-y-16 gap-y-8 md:w-full md:px-16 md:gap-y-4 lg:px-0 lg:gap-y-16 lg:w-4/6 lg:pr-8">
         </div>
       </div>
     </div>
@@ -154,7 +163,7 @@
   <!-- FOOTER -->
   <footer>
     <div class="flex flex-col items-center py-8 bg-white bg-opacity-90 z-60 sm:px-4">
-      <div class="container flex flex-col max-w-6xl pl-8 m-auto text-yellow-400 sm:items-center sm:pl-0">
+      <div class="container flex flex-col max-w-6xl pl-8 m-auto text-yellow-400 sm:items-center md:items-baseline">
         <a href="#" class="flex pr-3 mb-4 sm:w-2/12 md:flex-row sm:flex-col sm:mb-0">
           <i class="pr-2 text-2xl fas fa-store-alt"></i>
           <span class="flex flex-col text-xs">
@@ -176,7 +185,7 @@
             <span class="text-black">TTY: 1-888-888-1234</span>
           </span>
         </a>
-        <a href="#" class="flex flex-row hidden pr-3 mb-4 sm:w-2/12 sm:mb-0 sm:flex sm:contents">
+        <a href="#" class="flex-row hidden pr-3 mb-4 sm:w-2/12 sm:mb-0 sm:flex sm:contents">
           <i class="pr-2 text-3xl sm:text-2xl fas fa-mobile-alt"></i>
           <span class="flex flex-col text-xs">
             <span class="font-bold text-black">Download the App</span>
@@ -185,11 +194,11 @@
         </a>
       </div>
 
-      <div class="container max-w-6xl m-auto">
-        <hr class="my-4 sm:my-8">
-      </div>
+      <div class="flex flex-col justify-between max-w-6xl px-8 m-auto mt-4 sm:flex-row sm:px-0">
+        <div class="container max-w-6xl m-auto">
+          <hr class="my-4 sm:my-8">
+        </div>
 
-      <div class="flex flex-col justify-between max-w-6xl px-8 m-auto mt-4 sm:mt-0 sm:flex-row sm:px-0">
         <div class="flex justify-between py-4 sm:px-3 sm:w-3/12 sm:py-0">
           <p class="text-lg font-bold uppercase sm:text-base">About Us</p>
           <span>
