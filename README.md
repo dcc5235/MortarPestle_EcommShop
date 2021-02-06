@@ -1,6 +1,6 @@
 # Portfolio project for e-commerce site
 
-HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT
+HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT | CONTENTFUL API
 
 # A WORK IN PROGRESS
 
@@ -9,9 +9,11 @@ HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT
 - Install latest version of Node. Must use v12+
 - Install tailwind CSS using documentation. 
 
-Run command line ``` npm run watch-css```
+Run command line ``` npm run build-css```
 
 - Storing data with [contentful](https://www.contentful.com/)
+
+Run command line ```npm install contentful```
 
 ## Sample Images Pre-Production
 
