@@ -25,3 +25,11 @@
   align-items: center;
   margin: 1.5rem 0;
 }
+
+#logo {
+  width: inherit;
+}
+
+#header {
+  background-color: #d5ccdf;
+}
