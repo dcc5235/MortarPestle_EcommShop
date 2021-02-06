@@ -4,7 +4,7 @@
   "description": "Dany Chheang's Portfolio Project for ecommerce site",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
+    "build-css": "tailwindcss build ./src/css/tailwind.css -o ./src/css/build-tailwind.css",
     "production-css": "NODE_ENV=production postcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
     "watch-css": "onchange 'tailwind.config.js' 'src/**/*.css' -- npm run build-css"
   },
