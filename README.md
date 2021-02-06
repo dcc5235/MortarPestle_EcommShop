@@ -11,6 +11,8 @@ HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT
 
 Run command line ``` npm run watch-css```
 
+- Storing data with [contentful](https://www.contentful.com/)
+
 ## Sample Images Pre-Production
 
 Landing Page
