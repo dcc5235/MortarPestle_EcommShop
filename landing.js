@@ -29,10 +29,10 @@ class Display {
     reps.forEach(rep => {
       result += `
       <div id="img-container" class="h-4/5 mx-8 sm:mx-0 lg:h-3/4">
-          <p class="text-xl text-black">${rep.name}</p>
-          <p class="mb-2 uppercase">${rep.title}</p>
+          <p class="text-xl text-black mt-2">${rep.name}</p>
+          <p class="text-lg sm:text-base mb-2 uppercase">${rep.title}</p>
           <img src=${rep.image} alt="customer" class="w-full h-full shadow-lg sm:hover:opacity-50">
-          <p class="mt-2 text-sm">${rep.review}</p>
+          <p class="w-full mt-2 text-md sm:text-sm mb-4">${rep.review}</p>
         </div>
       `
     });
