@@ -1,46 +1,39 @@
-# Portfolio project for e-commerce site
+# Mortar & Pestle eCommerce Platform ![GitHub version doc](https://img.shields.io/badge/Version-1.0.0-red) ![GitHub last commit](https://img.shields.io/github/last-commit/dcc5235/Portfolio?style=flat-square) 
 
-HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT | CONTENTFUL API
+HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT | NODE.JS | CONTENTFUL API
 
-# A WORK IN PROGRESS
+A full-featured e-commerce platform with landing page. Users are re-routed to the product shopping page from the landing page shop buttons where they can add items to the shopping basket, add additional items, and remote items from the shopping basket. 
 
-## Technologies & Installations
+## This is still a work in progress. However, you can demo the static landing page [here](https://mortarpestle.netlify.app/).
 
-- Install latest version of Node. Must use v12+
-- Install tailwind CSS using documentation. 
+---
 
-Run command line ``` npm run build-css```
+## Installation & Technologies
+- Download the full package, select the Code button, choose the "Download ZIP" option.
+- Install [Node.js](https://nodejs.org/en/), current version. Must use v12+ if using Tailwind CSS.
+- Install [Tailwind CSS](https://tailwindcss.com/docs/installation) using their documentation.
+  - Run command line ```npm run build-css``` if following package.json file with script <br>
+  ```"build-css": "tailwindcss build ./src/css/tailwind.css -o ./src/css/build-tailwind.css"```.
+- Install [contentful](https://www.contentful.com/) headless CMS.
+  - Run command line ```npm install contentful```.
+- [PayPal API](https://developer.paypal.com/docs/api-basics/).
 
-- Storing data with [contentful](https://www.contentful.com/)
+## Pre-Production Sample Images
 
-Run command line ```npm install contentful```
+### Products Page
 
-## Sample Images Pre-Production
-
-Landing Page
-
-<img src="https://media-exp1.licdn.com/dms/image/C4E22AQEVKsLH7BMLtw/feedshare-shrink_800/0/1612224711679?e=1615420800&v=beta&t=JPFqFxioR66kID38DnofMuy8acVvHrrv8X5yEUMP3Lc" width="40%">
-<img src="https://media-exp1.licdn.com/dms/image/C4E22AQH9gR-AYTCSKA/feedshare-shrink_800/0/1612224711132?e=1615420800&v=beta&t=7mWd6gwOVfh1hZKgetJ3Krce30hymPuga77zbhIe_yA" width="40%">
-<img src="https://media-exp1.licdn.com/dms/image/C4E22AQG2LbZIp2i4mQ/feedshare-shrink_800/0/1612224712116?e=1615420800&v=beta&t=yA4a-W1yEw9-Ytuvt_Jmi44YatCPd9NZStJLaSMus98" width="40%">
-
-Products Page
-
-<img src="https://pbs.twimg.com/media/EsOZgq7W8AAHNmj?format=png&name=900x900" width="40%">
+<img src="https://pbs.twimg.com/media/EsOZgq7W8AAHNmj?format=png&name=900x900" width="40%"><br>
 <img src="https://pbs.twimg.com/media/EscdY-eXEAYFi4M?format=jpg&name=medium" width="40%">
 
-Shopping Bag
+### Shopping Bag
 
-<img src="https://pbs.twimg.com/media/EsTflkjXcAUXKGA?format=png&name=small" width="40%">
+<img src="https://pbs.twimg.com/media/EsTflkjXcAUXKGA?format=png&name=small" width="40%"><br>
 <img src="https://pbs.twimg.com/media/EsxMJK-XAAEwP1R?format=jpg&name=medium" width="40%">
-
-Footer
-
-<img src="https://pbs.twimg.com/media/EtCMuL-XAAwroH1?format=jpg&name=large" width="50%">
 
 ## Credits
 
-- Design inspiration - Sephora, FabFitFun, Tarte, Ulta
-- Names used from a generator: https://www.name-generator.org.uk/quick/
-- SVG - FabFitFun
-- Icons - FontAwesome
-- Photos - https://www.pexels.com/
+- Design Inspiration from eCommerce platforms, including [Sephora](https://www.sephora.com/), [FabFitFun](https://fabfitfun.com/), [Tarte](https://tartecosmetics.com/), and [Ulta](https://www.ulta.com/).
+- VIP Client Names used from a [name generator](https://www.name-generator.org.uk/quick/).
+- SVG from [FabFitFun](https://fabfitfun.com/get-the-box/#plan=fffvip).
+- Icons from [FontAwesome](https://fontawesome.com/).
+- Photos from [Pexels](https://www.pexels.com/).
