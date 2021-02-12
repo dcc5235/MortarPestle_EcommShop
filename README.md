@@ -4,7 +4,7 @@ HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT | NODE.JS | CONTENTFUL API
 
 A full-featured e-commerce platform with landing page. Users are re-routed to the product shopping page from the landing page shop buttons where they can add items to the shopping basket, add additional items, and remote items from the shopping basket. 
 
-## This is still a work in progress. However, you can demo the static landing page [here](https://mortarpestle.netlify.app/).
+## This is still a work in progress. However, you can demo what is available [here](https://mortarpestle.netlify.app/).
 
 ---
 
