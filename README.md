@@ -18,17 +18,7 @@ A full-featured e-commerce platform with landing page. Users are re-routed to th
   - Run command line ```npm install contentful```.
 - [PayPal API](https://developer.paypal.com/docs/api-basics/).
 
-## Pre-Production Sample Images
-
-### Products Page
-
-<img src="https://pbs.twimg.com/media/EsOZgq7W8AAHNmj?format=png&name=900x900" width="40%"><br>
-<img src="https://pbs.twimg.com/media/EscdY-eXEAYFi4M?format=jpg&name=medium" width="40%">
-
-### Shopping Bag
-
-<img src="https://pbs.twimg.com/media/EsTflkjXcAUXKGA?format=png&name=small" width="40%"><br>
-<img src="https://pbs.twimg.com/media/EsxMJK-XAAEwP1R?format=jpg&name=medium" width="40%">
+## Highlights
 
 ## Credits
 
