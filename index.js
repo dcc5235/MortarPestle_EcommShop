@@ -1,3 +1,9 @@
+// CONTENTFUL
+const client = contentful.createClient({
+  space: "apo0pwvj0cdv",
+  accessToken: "SWWmyq3ORjZFYRZdVRR6sH9Lu2VLJFH_vTEUWc7FMxc"
+});
+
 // VARIABLES
 const bagButton = document.querySelector('#bag-btn'); // shopping bag icon in nav
 const closeBag = document.querySelector('#close-bag'); // span element with shopping bag icon in shopping bag section
@@ -16,18 +22,25 @@ let allButtons = [];
 
 // Retrieves Products Data
 class Products {
-  async getProducts() { // retrieves data from local server (products.json)
+  async getProducts() {
     try {
-      let result = await fetch('products.json');
-      let data = await result.json();
+      // retrieves data from contentful server
+      const response = await client.getEntries({
+        content_type: "mpProducts"
+      });
+      console.log(response.items)
 
-      let products = data.items;
+      // retrieves data from local server (products.json)
+      // let result = await fetch('products.json');
+      // let data = await result.json();
+
+      let products = response.items;
       products = products.map(item => {
         // destructuring to organize the data on return
         const { id } = item.sys;
-        const { company, title, price } = item.fields;
+        const { company, title, cost } = item.fields;
         const image = item.fields.image.fields.file.url;
-        return { id, company, title, price, image }
+        return { id, company, title, cost, image }
       })
       return products
     } catch (error) {
@@ -56,7 +69,7 @@ class Display {
           </div>
           <h3 class="mt-4 text-base tracking-widest text-center uppercase">${product.company}</h3>
           <h3 class="text-base tracking-widest text-center normal-case">${product.title}</h3>
-          <h4 class="mt-3 tracking-widest text-center text-bold">$${product.price}</h4>
+          <h4 class="mt-3 tracking-widest text-center text-bold">$${product.cost}</h4>
         </article>
       `
     });
@@ -98,7 +111,7 @@ class Display {
     let itemsTotal = 0;
 
     basket.map(item => {
-      totalCost += item.price * item.amount;
+      totalCost += item.cost * item.amount;
       itemsTotal += item.amount;
     });
 
@@ -115,7 +128,7 @@ class Display {
       <div class="text-sm tracking-widest text-left">
         <h3 class="mt-4 uppercase">${item.company}</h3>
         <h4 class="text-yellow-500 normal-case">${item.title}</h4>
-        <h5 class="mx-0 my-2">$${item.price}</h5>
+        <h5 class="mx-0 my-2">$${item.cost}</h5>
         <span class="remove-item text-xs text-gray-600 cursor-pointer" data-id=${item.id}>remove</span>
       </div>
       <div>
@@ -240,7 +253,7 @@ document.addEventListener("DOMContentLoaded", () => { // Once content loads in D
 
   // display and hide shopping bag
   display.displayBasket();
-  // Chaining: get all products and then, 
+  // get all products and then, 
   products.getProducts().then(products => {
     // display products in the user interface
     display.displayProducts(products);
