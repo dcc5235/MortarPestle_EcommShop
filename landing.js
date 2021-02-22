@@ -1,3 +1,9 @@
+// CONTENTFUL
+const client = contentful.createClient({
+  space: "apo0pwvj0cdv",
+  accessToken: "SWWmyq3ORjZFYRZdVRR6sH9Lu2VLJFH_vTEUWc7FMxc"
+});
+
 // Variables
 const repsDiv = document.querySelector('#reps');
 
@@ -5,15 +11,19 @@ const repsDiv = document.querySelector('#reps');
 class Reps {
   async getReps() {
     try {
-      let result = await fetch('reps.json');
-      let data = await result.json();
-      let reps = data.items;
+      const response = await client.getEntries({
+        content_type: "mpReps"
+      });
+
+      // let result = await fetch('reps.json');
+      // let data = await result.json();
+      let reps = response.items;
 
       reps = reps.map(item => {
         const { id } = item.sys;
-        const { name, title, review } = item.fields;
+        const { name, title, reviews } = item.fields;
         const image = item.fields.image.fields.file.url;
-        return { id, name, title, image, review }
+        return { id, name, title, image, reviews }
       })
       return reps
     } catch (error) {
@@ -32,7 +42,7 @@ class Display {
           <p class="text-xl text-black mt-2">${rep.name}</p>
           <p class="text-lg sm:text-base mb-2 uppercase">${rep.title}</p>
           <img src=${rep.image} alt="customer" class="w-full h-full shadow-lg sm:hover:opacity-50">
-          <p class="w-full mt-2 text-md sm:text-sm mb-4">${rep.review}</p>
+          <p class="w-full mt-2 text-md sm:text-sm mb-4">${rep.reviews}</p>
         </div>
       `
     });
