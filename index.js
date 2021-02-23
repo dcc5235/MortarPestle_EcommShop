@@ -1,3 +1,8 @@
+// CONTENTFUL
+// const client = contentful.createClient({
+//   space: "process.env.SPACE",
+//   accessToken: "process.env.ACCESS_TOKEN"
+// });
 
 // VARIABLES
 const bagButton = document.querySelector('#bag-btn'); // shopping bag icon in nav
@@ -20,9 +25,9 @@ class Products {
   async getProducts() {
     try {
       // retrieves data from contentful server
-      const response = await client.getEntries({
-        content_type: "mpProducts"
-      });
+      // const response = await client.getEntries({
+      //   content_type: "mpProducts"
+      // });
 
       // retrieves data from local server (products.json)
       let result = await fetch('products.json');
