@@ -1,8 +1,9 @@
 // CONTENTFUL
 const client = contentful.createClient({
   space: "apo0pwvj0cdv",
-  accessToken: "SWWmyq3ORjZFYRZdVRR6sH9Lu2VLJFH_vTEUWc7FMxc"
+  accessToken: "process.env.ACCESS_TOKEN"
 });
+
 
 // VARIABLES
 const bagButton = document.querySelector('#bag-btn'); // shopping bag icon in nav
@@ -28,11 +29,10 @@ class Products {
       const response = await client.getEntries({
         content_type: "mpProducts"
       });
-      console.log(response.items)
 
       // retrieves data from local server (products.json)
-      // let result = await fetch('products.json');
-      // let data = await result.json();
+      let result = await fetch('products.json');
+      let data = await result.json();
 
       let products = response.items;
       products = products.map(item => {
