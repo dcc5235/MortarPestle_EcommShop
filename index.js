@@ -1,3 +1,4 @@
+
 // VARIABLES
 const bagButton = document.querySelector('#bag-btn'); // shopping bag icon in nav
 const closeBag = document.querySelector('#close-bag'); // span element with shopping bag icon in shopping bag section
@@ -22,13 +23,12 @@ class Products {
       const response = await client.getEntries({
         content_type: "mpProducts"
       });
-      console.log(response.items)
 
       // retrieves data from local server (products.json)
-      // let result = await fetch('products.json');
-      // let data = await result.json();
+      let result = await fetch('products.json');
+      let data = await result.json();
 
-      let products = response.items;
+      let products = data.items;
       products = products.map(item => {
         // destructuring to organize the data on return
         const { id } = item.sys;
