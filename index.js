@@ -34,7 +34,7 @@ class Products {
       let result = await fetch('products.json');
       let data = await result.json();
 
-      let products = response.items;
+      let products = data.items;
       products = products.map(item => {
         // destructuring to organize the data on return
         const { id } = item.sys;
