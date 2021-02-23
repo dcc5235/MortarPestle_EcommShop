@@ -1,9 +1,3 @@
-// CONTENTFUL
-const client = contentful.createClient({
-  space: "apo0pwvj0cdv",
-  accessToken: "process.env.ACCESS_TOKEN"
-});
-
 
 // VARIABLES
 const bagButton = document.querySelector('#bag-btn'); // shopping bag icon in nav
