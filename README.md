@@ -19,6 +19,7 @@ A full-featured e-commerce platform with landing page. Users are re-routed to th
 - [PayPal API](https://developer.paypal.com/docs/api-basics/).
 
 ## Highlights
+- Access Node JS server from browser. Configure server to receive network request, inspect request, dynamically generate HTML, and send HTML back to browser.
 
 ## Credits
 
