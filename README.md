@@ -16,10 +16,9 @@ A full-featured e-commerce platform with landing page. Users are re-routed to th
   ```"build-css": "tailwindcss build ./src/css/tailwind.css -o ./src/css/build-tailwind.css"```.
 - Install [contentful](https://www.contentful.com/) headless CMS.
   - Run command line ```npm install contentful```.
-- [PayPal API](https://developer.paypal.com/docs/api-basics/).
+- [PayPal API](https://developer.paypal.com/docs/api-basics/) for checkout page.
 
 ## Highlights
-- Access Node JS server from browser. Configure server to receive network request, inspect request, dynamically generate HTML, and send HTML back to browser.
 
 ## Credits
 
