@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
     mode: 'layers',
-    // looks at all html files in public directory
+    // looks at all html files in directory
     content: ['./**/*.html'],
   },
   darkMode: false, // or 'media' or 'class'
