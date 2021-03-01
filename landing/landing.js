@@ -1,9 +1,3 @@
-// CONTENTFUL
-const client = contentful.createClient({
-  space: "apo0pwvj0cdv",
-  accessToken: "SWWmyq3ORjZFYRZdVRR6sH9Lu2VLJFH_vTEUWc7FMxc"
-});
-
 // Variables
 const repsDiv = document.querySelector('#reps');
 
@@ -11,14 +5,11 @@ const repsDiv = document.querySelector('#reps');
 class Reps {
   async getReps() {
     try {
-      const response = await client.getEntries({
-        content_type: "mpReps"
-      });
 
-      // let result = await fetch('reps.json');
-      // let data = await result.json();
-      let reps = response.items;
+      let result = await fetch('reps.json');
+      let data = await result.json();
 
+      let reps = data.items;
       reps = reps.map(item => {
         const { id } = item.sys;
         const { name, title, reviews } = item.fields;
