@@ -19,6 +19,9 @@ A full-featured e-commerce platform with landing page. Users are re-routed to th
 - [PayPal API](https://developer.paypal.com/docs/api-basics/) for checkout page.
 
 ## Highlights
+- Product content loaded through the DOM
+- Router set up
+- Product information available to add into basket and removed from basket
 
 ## Credits
 
