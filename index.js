@@ -1,5 +1,4 @@
-
-// ROUTER
+// ROUTER (NEEDS CLEAN UP)
 window.onload = function () {
   const view = document.getElementById('view');
 
@@ -37,15 +36,15 @@ window.onload = function () {
     {
       path: '/products',
       name: 'Products'
-    },
-    {
-      path: '/gift',
-      name: 'Gift'
-    },
-    {
-      path: '/login',
-      name: 'Log In'
     }
+    // ,{
+    //   path: '/gift',
+    //   name: 'Gift'
+    // },
+    // {
+    //   path: '/login',
+    //   name: 'Log In'
+    // }
   ]);
 
   // const currentPath = window.location.pathname;
