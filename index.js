@@ -1,3 +1,4 @@
+
 // ROUTER (NEEDS CLEAN UP)
 window.onload = function () {
   const view = document.getElementById('view');
@@ -20,13 +21,14 @@ window.onload = function () {
   activeRoutes.forEach(function (route) {
     route.addEventListener('click', navigate, false);
   });
+};
 
-  const Router = function (name, routes) {
-    return {
-      name: name,
-      routes: routes
-    }
-  };
+const Router = function (name, routes) {
+  return {
+    name: name,
+    routes: routes
+  }
+};
 
   const myFirstRouter = new Router('myFirstRouter', [
     {
@@ -60,4 +62,4 @@ window.onload = function () {
   //     view.innerHTML = '404';
   //   }
   // }
-}
+// }
