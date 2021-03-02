@@ -1,10 +1,5 @@
-// CONTENTFUL
-// const client = contentful.createClient({
-//   space: "process.env.SPACE",
-//   accessToken: "process.env.ACCESS_TOKEN"
-// });
 
-// ROUTER
+// ROUTER (NEEDS CLEAN UP)
 window.onload = function () {
   const view = document.getElementById('view');
 
@@ -35,24 +30,24 @@ const Router = function (name, routes) {
   }
 };
 
-const myFirstRouter = new Router('myFirstRouter', [
-  {
-    path: '/',
-    name: 'Root'
-  },
-  {
-    path: '/products',
-    name: 'Products'
-  },
-  {
-    path: '/gift',
-    name: 'Gift'
-  },
-  {
-    path: '/login',
-    name: 'Log In'
-  }
-]);
+  const myFirstRouter = new Router('myFirstRouter', [
+    {
+      path: '/',
+      name: 'Root'
+    },
+    {
+      path: '/products',
+      name: 'Products'
+    }
+    // ,{
+    //   path: '/gift',
+    //   name: 'Gift'
+    // },
+    // {
+    //   path: '/login',
+    //   name: 'Log In'
+    // }
+  ]);
 
   // const currentPath = window.location.pathname;
   // if (currentPath === '/') {
