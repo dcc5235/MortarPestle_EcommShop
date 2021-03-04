@@ -1,4 +1,4 @@
-// ROUTER (NEEDS CLEAN UP)
+// ROUTER
 window.onload = function () {
   const view = document.getElementById('view');
 
@@ -20,22 +20,23 @@ window.onload = function () {
   activeRoutes.forEach(function (route) {
     route.addEventListener('click', navigate, false);
   });
+};
 
-  const Router = function (name, routes) {
-    return {
-      name: name,
-      routes: routes
-    }
-  };
+const Router = function (name, routes) {
+  return {
+    name: name,
+    routes: routes
+  }
+};
 
-  const myFirstRouter = new Router('myFirstRouter', [
-    {
-      path: '/',
-      name: 'Root'
-    },
-    {
-      path: '/products',
-      name: 'Products'
-    }
-  ]);
-}
+const myFirstRouter = new Router('myFirstRouter', [
+  {
+    path: '/',
+    name: 'Root'
+  },
+  {
+    path: '/products',
+    name: 'Products'
+  }
+]);
+
