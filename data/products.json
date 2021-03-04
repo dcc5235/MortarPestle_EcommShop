@@ -6,7 +6,7 @@
         "company": "Mortar & Pestle Collection",
         "title": "Confident Energy Palette",
         "cost": "14.00",
-        "image": { "fields": { "file": { "url": "./images/img3.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/products/products-img-1.jpg" } } }
       }
     },
     {
@@ -15,7 +15,7 @@
         "company": "Urban Beauty",
         "title": "Velvet Noir Big Volume Mascara",
         "cost": "27.50",
-        "image": { "fields": { "file": { "url": "./images/img4.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/products/products-img-2.jpg" } } }
       }
     },
     {
@@ -24,7 +24,7 @@
         "company": "Institute",
         "title": "Gentle Massager for Face & Neck",
         "cost": "52.00",
-        "image": { "fields": { "file": { "url": "./images/img5.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/products/products-img-3.jpg" } } }
       }
     },
     {
@@ -33,7 +33,7 @@
         "company": "The Ordinary",
         "title": "Algae Moisturizing Factors + HA",
         "cost": "5.80",
-        "image": { "fields": { "file": { "url": "./images/img6.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/products/products-img-4.jpg" } } }
       }
     },
     {
@@ -42,7 +42,7 @@
         "company": "sweetest rose Collection",
         "title": "Luminescent Shimmer Blush 20",
         "cost": "14.00",
-        "image": { "fields": { "file": { "url": "./images/img7.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/products/products-img-5.jpg" } } }
       }
     },
     {
@@ -51,7 +51,7 @@
         "company": "Mara O. Joseph Collection",
         "title": "100% Argan Oil Moisturizer",
         "cost": "49.00",
-        "image": { "fields": { "file": { "url": "./images/img8.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/products/products-img-6.jpg" } } }
       }
     },
     {
@@ -60,7 +60,7 @@
         "company": "BOCCA",
         "title": "Julietta Rose d'Arabi Eau Roller",
         "cost": "30.00",
-        "image": { "fields": { "file": { "url": "./images/img9.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/products/products-img-7.jpg" } } }
       }
     },
     {
@@ -69,7 +69,7 @@
         "company": "Yes San Laura",
         "title": "Rouge Smooth Shine Lip Crayon",
         "cost": "38.00",
-        "image": { "fields": { "file": { "url": "./images/img10.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/products/products-img-8.jpg" } } }
       }
     },
     {
@@ -78,7 +78,7 @@
         "company": "Mortar & Pestle Collection",
         "title": "Hyaluronic Acid Deep Hydration",
         "cost": "12.00",
-        "image": { "fields": { "file": { "url": "./images/img11.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/products/products-img-9.jpg" } } }
       }
     },
     {
@@ -87,7 +87,7 @@
         "company": "Mortar & Pestle Collection",
         "title": "Picture Perfect Eyelash Curler",
         "cost": "15.00",
-        "image": { "fields": { "file": { "url": "./images/img12.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/products/products-img-10.jpg" } } }
       }
     },
     {
@@ -96,7 +96,7 @@
         "company": "Boticelli Venus Collection",
         "title": "Night & Day Liner To Go",
         "cost": "6.00",
-        "image": { "fields": { "file": { "url": "./images/img13.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/products/products-img-11.jpg" } } }
       }
     },
     {
@@ -105,7 +105,7 @@
         "company": "Mortar & Pestle Collection",
         "title": "Matte Perfection Powder",
         "cost": "20.00",
-        "image": { "fields": { "file": { "url": "./images/img14.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/products/products-img-12.jpg" } } }
       }
     }
   ]

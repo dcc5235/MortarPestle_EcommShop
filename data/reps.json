@@ -6,7 +6,7 @@
         "name": "Arianne Arias",
         "title": "URBAN BEAUTY REP",
         "reviews": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "image": { "fields": { "file": { "url": "./images/img24.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/landing/vip-rep-1.jpg" } } }
       }
     },
     {
@@ -15,7 +15,7 @@
         "name": "Kai Croft",
         "title": "MORTAR & PESTLE REP",
         "reviews": "Ut laborum iste sit excepturi reiciendis non quis consequatur a consequatur?",
-        "image": { "fields": { "file": { "url": "./images/img19.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/landing/vip-rep-2.jpg" } } }
       }
     },
     {
@@ -24,7 +24,7 @@
         "name": "Sasha Curry",
         "title": "INSTITUTE REP",
         "reviews": "Nam quibusdam incidunt qui porro beatae sed galisum neque.",
-        "image": { "fields": { "file": { "url": "./images/img20.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/landing/vip-rep-3.jpg" } } }
       }
     },
     {
@@ -33,7 +33,7 @@
         "name": "Danica Mcneill",
         "title": "YES SAN LAURA REP",
         "reviews": "Eum rerum corporis sed possimus error aut cumque suscipit qui.",
-        "image": { "fields": { "file": { "url": "./images/img22.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/landing/vip-rep-4.jpg" } } }
       }
     },
     {
@@ -42,7 +42,7 @@
         "name": "Destiny Wilkerson",
         "title": "SWEETEST ROSE REP",
         "reviews": "Est nesciunt nostrum est reprehenderit consequatur et molestiae nihil.",
-        "image": { "fields": { "file": { "url": "./images/img27.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/landing/vip-rep-5.jpg" } } }
       }
     },
     {
@@ -51,7 +51,7 @@
         "name": "Tierney Horner",
         "title": "THE ORDINARY REP",
         "reviews": "Qui asperiores impedit id quaerat omnis aut assumenda omnis?",
-        "image": { "fields": { "file": { "url": "./images/img23.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/landing/vip-rep-6.jpg" } } }
       }
     },
     {
@@ -60,7 +60,7 @@
         "name": "Maddy Braun",
         "title": "MARA O. JOSEPH REP",
         "reviews": "Et distinctio animi non quia galisum ea exercitationem delectus.",
-        "image": { "fields": { "file": { "url": "./images/img21.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/landing/vip-rep-7.jpg" } } }
       }
     },
     {
@@ -69,7 +69,7 @@
         "name": "Kay Dejesus",
         "title": "BOCCA REP",
         "reviews": "Qui error sint atque laborum sed sequi voluptatibus aut voluptas quia.",
-        "image": { "fields": { "file": { "url": "./images/img17.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/landing/vip-rep-8.jpg" } } }
       }
     },
     {
@@ -78,7 +78,7 @@
         "name": "Anwar Mcconnell",
         "title": "VENUS REP",
         "reviews": "Id molestias modi hic voluptatem voluptates quo voluptatem corrupti.",
-        "image": { "fields": { "file": { "url": "./images/img26.jpg" } } }
+        "image": { "fields": { "file": { "url": "/src/assets/images/landing/vip-rep-9.jpg" } } }
       }
     }
   ]
