@@ -6,7 +6,7 @@ class Reps {
   async getReps() {
     try {
 
-      let result = await fetch('reps.json');
+      let result = await fetch('/data/reps.json');
       let data = await result.json();
 
       let reps = data.items;
