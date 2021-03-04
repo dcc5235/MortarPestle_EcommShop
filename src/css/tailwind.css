@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-#img-container:hover button {
-  transform: translateX(0);
-}
-
 #basket {
   min-width: 26rem;
+}
+
+#logo {
+  width: inherit;
+}
+
+#header {
+  background-color: #d5ccdf;
+}
+
+#img-container:hover button {
+  transform: translateX(0);
 }
 
 .visibility {
@@ -24,12 +32,4 @@
   
   align-items: center;
   margin: 1.5rem 0;
-}
-
-#logo {
-  width: inherit;
-}
-
-#header {
-  background-color: #d5ccdf;
 }
