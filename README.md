@@ -20,8 +20,9 @@ A full-featured e-commerce platform with landing page. Users are re-routed to th
 
 ## Highlights
 - Product content loaded through the DOM
-- Router set up
-- Product information available to add into basket and removed from basket
+- Router directs users from landing page to products on click with shop button
+- Product data added into basket and removed from basket, updated through local storage
+- Headless CMS Contentful to store product data, retrieved data through API integration
 
 ## Credits
 
