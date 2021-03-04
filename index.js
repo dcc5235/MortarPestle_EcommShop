@@ -30,36 +30,13 @@ const Router = function (name, routes) {
   }
 };
 
-  const myFirstRouter = new Router('myFirstRouter', [
-    {
-      path: '/',
-      name: 'Root'
-    },
-    {
-      path: '/products',
-      name: 'Products'
-    }
-    // ,{
-    //   path: '/gift',
-    //   name: 'Gift'
-    // },
-    // {
-    //   path: '/login',
-    //   name: 'Log In'
-    // }
-  ]);
-
-  // const currentPath = window.location.pathname;
-  // if (currentPath === '/') {
-
-  // } else {
-  //   const route = myFirstRouter.routes.filter(function (r) {
-  //     return r.path === currentPath
-  //   })[0];
-  //   if (route) {
-  //     window.location.pathname = './products/';
-  //   } else {
-  //     view.innerHTML = '404';
-  //   }
-  // }
-// }
+const myFirstRouter = new Router('myFirstRouter', [
+  {
+    path: '/',
+    name: 'Root'
+  },
+  {
+    path: '/products',
+    name: 'Products'
+  }
+]);
