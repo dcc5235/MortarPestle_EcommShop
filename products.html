@@ -53,6 +53,7 @@
         <h2 id="shop" class="mb-8 text-4xl tracking-widest text-center uppercase sm:mb-20">new arrivals</h2>
         <div id="products"
           class="grid w-screen max-w-6xl m-0 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto gap-x-6 gap-y-8">
+          <!-- THIS IS WHERE PRODUCTS CONTENT GOES FROM JS FILE -->
         </div>
       </div>
     </section>
@@ -71,7 +72,7 @@
         <h2 class="font-bold tracking-widest">My Basket</h2>
         <div class="bag-content">
           <div class="basket-item">
-
+            <!-- THIS IS WHERE SHOPPING BAG CONTENT GOES FROM JS FILE -->
           </div>
           <hr>
         </div>
@@ -80,9 +81,9 @@
           <h3 class="my-4 uppercase">estimated total: $
             <span id="total-costs" class="text-bold">14.00</span>
           </h3>
-          <div id="paypal-btn">
-
-          </div>
+          <!-- <div id="paypal-btn">
+            ADD PAYPAL BUTTONS HERE, IF NEEDED BUT REMOVE CHECKOUT BTN BELOW
+          </div> -->
           <button id="checkout-bag" route="/checkout"
             class="px-3 py-2 font-bold tracking-widest uppercase transition duration-300 ease-in bg-gray-100 border-2 border-yellow-500 outline-none cursor-pointer hover:bg-yellow-500 hover:text-white bg-opacity-80">checkout
             basket</button>
@@ -237,6 +238,7 @@
       <p class="text-yellow-400 text-9xl">test test test test test test test test test test test test</p>
     </div>
   </div>-->
+
   </main>
   <script src="https://cdn.jsdelivr.net/npm/contentful@5.0.1/dist/contentful.browser.min.js"></script>
   <script src="/src/pages/products/index.js"></script>
