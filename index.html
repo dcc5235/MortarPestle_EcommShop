@@ -10,301 +10,307 @@
 </head>
 
 <body id="view">
-  <!-- NAVBAR -->
-  <nav class="sticky top-0 z-10 flex items-center h-16 bg-white">
-    <div class="container flex items-center max-w-6xl px-4 py-0 md:px-6 sm:m-auto sm:justify-between">
-      <div id="logo" class="flex items-center">
-        <span class="m-2 text-2xl text-yellow-500">
-          <i class="fas fa-mortar-pestle"></i>
+  <main id="main">
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-10 flex items-center h-16 bg-white">
+      <div class="container flex items-center max-w-6xl px-4 py-0 md:px-6 sm:m-auto sm:justify-between">
+        <div id="logo" class="flex items-center">
+          <span class="m-2 text-2xl text-yellow-500">
+            <i class="fas fa-mortar-pestle"></i>
+          </span>
+          <p class="text-3xl font-semibold w-max">Mortar & Pestle</p>
+        </div>
+        <!-- MOBILE -->
+        <span class="justify-end text-2xl sm:invisible">
+          <i class="fas fa-bars"></i>
         </span>
-        <p class="text-3xl font-semibold w-max">Mortar & Pestle</p>
-      </div>
-      <!-- MOBILE -->
-      <span class="justify-end text-2xl sm:invisible">
-        <i class="fas fa-bars"></i>
-      </span>
-      <!-- END MOBILE -->
-      <div class="container items-center hidden sm:flex sm:flex-row-reverse sm:visible">
-        <div class="flex items-center sm:w-max">
-          <button route="/products"
-            class="px-2 py-2 text-base tracking-wide uppercase bg-yellow-400 border-2 border-yellow-400 outline-none cursor-pointer md:px-6 hover:bg-yellow-400 hover:text-white">Shop
-            the latest</button>
-        </div>
-        <div route="/login" class="flex items-center pr-2 cursor-pointer md:pr-6 hover:text-yellow-500">
-          <span class="m-2 text-xl text-yellow-400">
-            <i class="fas fa-clipboard-check"></i>
-          </span>
-          <p class="text-base uppercase">Login</p>
-        </div>
-        <div route="/gift" class="flex items-center pr-2 cursor-pointer md:pr-6 hover:text-yellow-500">
-          <span class="m-2 text-xl text-yellow-400">
-            <i class="fas fa-gift"></i>
-          </span>
-          <p class="text-base uppercase">Gift</p>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- BANNER/HERO -->
-  <header id="header" class="flex items-center justify-center bg-center bg-cover">
-    <div class="flex flex-col justify-center m-auto lg:flex-row-reverse">
-      <div>
-        <img src="/src/assets/images/landing/landing-banner.jpg" alt="cosmetic products banner with sale sign"
-          class="lg:container">
-      </div>
-      <div
-        class="flex flex-col items-center justify-center max-w-screen-sm p-8 text-center bg-gray-100 sm:max-w-screen-md sm:px-16 sm:py-8 bg-opacity-70 md:max-w-screen-lg lg:px-4">
-        <h1
-          class="mb-6 text-4xl font-bold tracking-widest uppercase sm:text-5xl sm:mt-6 md:text-7xl md:mb-8 lg:text-5xl">
-          Get the
-          Latest
-          Items
-        </h1>
-        <h3 class="mb-6 text-2xl font-normal tracking-wide uppercase sm:mb-5 md:mb-10">Animal-Cruelty Free.</h3>
-        <button route="/products"
-          class="px-12 py-4 text-base tracking-widest uppercase bg-yellow-400 border-2 border-yellow-400 shadow-lg outline-none cursor-pointer hover:bg-transparent">shop
-          now</button>
-        <h4 class="mt-6 text-lg tracking-wide sm:mb-6 md:mt-8"> Be the first to have the latest, premium
-          products delivered to your door.</h4>
-      </div>
-    </div>
-  </header>
-
-  <!-- HOW IT WORKS -->
-  <div class="py-8">
-    <div class="max-w-6xl px-4 m-auto text-center">
-      <h2 class="text-4xl font-normal tracking-wide text-center uppercase">
-        how it works
-      </h2>
-      <div
-        class="grid max-w-6xl py-4 m-0 sm:w-screen xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 auto-rows-auto gap-x-3 gap-y-8 md:w-full">
-        <div class="flex flex-col items-center">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/abtesting-assets/gtb_master_12720_rollover/img/ico-customize-b.svg"
-            alt="" class="container px-8">
-          <h3 class="px-8 mb-2 text-xl font-semibold tracking-wide">Customize</h3>
-          <p class="px-8">As VIP members, be the one of the first to choose all premium products and add-ons. Receive
-            the latest
-            beauty insider secrets one month before product release date.</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/abtesting-assets/gtb_master_12720_rollover/img/ico-delivered-b.svg"
-            alt="" class="container px-8">
-          <h3 class="px-8 mb-2 text-xl font-semibold tracking-wide">Get It</h3>
-          <p class="px-8">Indulge in the best in beauty and wellness ― animal-cruelty free, guilt-free. Don't forget to
-            #Mortar&Pestle when you share!</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="https://s3-us-west-2.amazonaws.com/abtesting-assets/gtb_master_12720_rollover/img/ico-explore-b.svg"
-            alt="" class="container px-8">
-          <h3 class="px-8 mb-2 text-xl font-semibold tracking-wide">Connect</h3>
-          <p class="px-8">With your membership, look and feel great with other VIPs, shop exclusive member sales, and
-            join our
-            amazing
-            Mortar & Pestle community.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CTA BREAK -->
-  <div class="text-lg tracking-wide text-center text-white bg-black py-7">
-    <div class="container flex flex-col items-center max-w-6xl px-6 py-0 m-auto sm:justify-between lg:flex-row lg:px-6">
-      <div class="flex items-center mb-6 font-bold uppercase lg:mb-0">
-        <i class="far fa-times-circle"></i>
-        <p class="ml-1">No Parabens or Sulfates</p>
-      </div>
-      <div>
-        <button route="/products"
-          class="px-12 py-4 text-base font-bold tracking-widest uppercase bg-yellow-400 border-2 border-yellow-400 shadow-lg outline-none cursor-pointer lg:px-12 hover:text-black">shop
-          now</button>
-      </div>
-      <div class="flex items-center mt-6 font-bold uppercase lg:mt-0">
-        <i class="fas fa-globe"></i>
-        <p class="ml-1">free shipping, worldwide</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- VIP INSIDER COMMUNITY -->
-  <section class="px-0 m-auto">
-    <div class="flex items-center justify-center bg-purple-100">
-      <div class="flex flex-col pt-16 pb-16 sm:pb-16 sm:max-w-6xl lg:flex-row md:pb-8 lg:pb-24">
-        <div class="pl-8 text-center lg:text-left lg:pl-8 lg:w-2/6 sm:w-full md:pl-0">
-          <h2 class="mr-8 text-5xl font-bold underline uppercase sm:mr-0 sm:mb-4 md:text-6xl lg:text-3xl">VIP Insider
-            Community</h2>
-          <p class="py-8 pr-4 mr-8 text-base tracking-wider sm:text-lg sm:pr-8 md:w-full md:px-16 lg:pl-0 lg:pr-4">
-            Still not
-            convinced? Check
-            out our
-            Mortar &
-            Pestle
-            Community
-            where
-            you
-            can
-            ask questions,
-            join challenges,
-            and
-            get
-            recommendations from our stylists and people like you. See what our brand representatives have to say about
-            our
-            products and partners.</p>
-        </div>
-
-        <div id="reps"
-          class="grid w-full max-w-6xl grid-cols-1 m-0 sm:grid-cols-2 lg:grid-cols-3 auto-rows-auto sm:gap-x-6 sm:gap-y-16 gap-y-6 sm:px-6 md:px-16 md:gap-y-4 lg:px-0 lg:gap-y-16 lg:w-4/6 lg:pr-8">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="flex flex-col items-center py-8 bg-white z-60 lg:px-4">
-      <div class="container flex-col hidden max-w-6xl text-yellow-400 lg:flex lg:items-center lg:flex-row lg:m-auto">
-        <a href="#" class="flex mb-4 ml-8 lg:w-2/12 md:flex-row lg:ml-4">
-          <i class="pr-2 text-2xl fas fa-store-alt lg:text-xl"></i>
-          <span class="flex flex-col text-xs">
-            <span class="text-lg font-bold text-black lg:text-xs">Find a Store</span>
-            <span class="text-black lg:text-xs">Shop at This Mall</span>
-          </span>
-        </a>
-        <a href="#" class="flex flex-row mb-4 lg:w-2/12">
-          <i class="pr-2 text-3xl sm:text-2xl far fa-comment-dots"></i>
-          <span class="flex flex-col text-xs">
-            <span class="text-lg font-bold text-black sm:text-base lg:text-xs">Customer Live Chat</span>
-            <span class="text-black">Available</span>
-          </span>
-        </a>
-        <a href="#" class="flex flex-row pr-3 mb-4 sm:w-2/12 sm:mb-0 lg:mb-4">
-          <i class="pr-3 text-3xl lg:pr-2 lg:text-2xl fas fa-phone-square-alt"></i>
-          <span class="flex flex-col text-xs">
-            <span class="text-lg font-bold text-black sm:text-base lg:text-xs">1.877.123.4567</span>
-            <span class="text-black">TTY: 1.888.888.1234</span>
-          </span>
-        </a>
-        <a href="#" class="flex flex-row mb-4 sm:w-2/12 lg:mb-4">
-          <i class="pr-2 text-3xl lg:text-2xl fas fa-mobile-alt"></i>
-          <span class="flex flex-col text-xs">
-            <span class="font-bold text-black">Download the App</span>
-            <span class="text-black">Text “APP” to 12345</span>
-          </span>
-        </a>
-      </div>
-
-      <div class="container hidden max-w-6xl m-auto lg:block">
-        <hr class="my-8">
-      </div>
-
-      <div class="flex flex-col justify-between w-full max-w-6xl px-8 m-auto lg:flex-row lg:px-0">
-        <div class="flex justify-between py-4 sm:px-3 lg:w-3/12 lg:py-0 lg:block">
-          <p class="text-lg font-bold uppercase lg:text-base lg:mb-2">About Us</p>
-          <span class="lg:hidden">
-            <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square"></i>
-          </span>
-          <div class="hidden lg:contents">
-            <ul class="text-sm list-none">
-              <li class="cursor-pointer hover:underline">About Mortar & Pestle</li>
-              <li class="cursor-pointer hover:underline">Careers</li>
-              <li class="cursor-pointer hover:underline">Affiliates</li>
-              <li class="cursor-pointer hover:underline">Diversity & Inclusion</li>
-              <li class="cursor-pointer hover:underline">Events</li>
-              <li class="cursor-pointer hover:underline">Supply Transparency</li>
-            </ul>
+        <!-- END MOBILE -->
+        <div class="container items-center hidden sm:flex sm:flex-row-reverse sm:visible">
+          <div class="flex items-center sm:w-max">
+            <button route="/products"
+              class="px-2 py-2 text-base tracking-wide uppercase bg-yellow-400 border-2 border-yellow-400 outline-none cursor-pointer md:px-6 hover:bg-yellow-400 hover:text-white">Shop
+              the latest</button>
+          </div>
+          <div class="flex items-center pr-2 cursor-pointer md:pr-6 hover:text-yellow-500">
+            <span class="m-2 text-xl text-yellow-400">
+              <i class="fas fa-clipboard-check"></i>
+            </span>
+            <p class="text-base uppercase">Login</p>
+          </div>
+          <div class="flex items-center pr-2 cursor-pointer md:pr-6 hover:text-yellow-500">
+            <span class="m-2 text-xl text-yellow-400">
+              <i class="fas fa-gift"></i>
+            </span>
+            <p class="text-base uppercase">Gift</p>
           </div>
         </div>
+      </div>
+    </nav>
 
-        <div class="flex justify-between py-4 sm:px-3 lg:w-3/12 lg:py-0 lg:block">
-          <p class="text-lg font-bold uppercase lg:text-base lg:mb-2">Guest Services</p>
-          <span class="lg:hidden">
-            <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square"></i>
-          </span>
-          <div class="hidden lg:contents">
-            <ul class="text-sm list-none">
-              <li class="cursor-pointer hover:underline">Guest Services Center</li>
-              <li class="cursor-pointer hover:underline">Order Status</li>
-              <li class="cursor-pointer hover:underline">Shipping Policy & Rate</li>
-              <li class="cursor-pointer hover:underline">Returns</li>
-              <li class="cursor-pointer hover:underline">Online Ordering</li>
-              <li class="cursor-pointer hover:underline">Contact Us</li>
-              <li class="cursor-pointer hover:underline">Billing</li>
-              <li class="cursor-pointer hover:underline">In Store Pick Up</li>
-              <li class="cursor-pointer hover:underline">Gift Cards</li>
-              <li class="cursor-pointer hover:underline">Privacy Rights</li>
-              <li class="cursor-pointer hover:underline">Accessibility</li>
-            </ul>
-          </div>
+    <!-- BANNER/HERO -->
+    <header id="header" class="flex items-center justify-center bg-center bg-cover">
+      <div class="flex flex-col justify-center m-auto lg:flex-row-reverse">
+        <div>
+          <img src="/src/assets/images/landing/landing-banner.jpg" alt="cosmetic products banner with sale sign"
+            class="lg:container">
         </div>
-
-        <div class="flex justify-between py-4 sm:px-3 lg:w-3/12 lg:py-0 lg:block">
-          <p class="text-lg font-bold uppercase lg:text-base">My Rewards</p>
-          <span>
-            <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square lg:hidden"></i>
-          </span>
-          <div class="hidden lg:contents">
-            <ul class="text-sm list-none">
-              <li class="cursor-pointer hover:underline">My Rewards Program</li>
-              <li class="cursor-pointer hover:underline">Purchase History</li>
-              <li class="cursor-pointer hover:underline">Account Settings</li>
-              <li class="cursor-pointer hover:underline">Beauty Offers</li>
-              <li class="cursor-pointer hover:underline">Bonuses</li>
-              <li class="cursor-pointer hover:underline">My Favorites</li>
-              <li class="cursor-pointer hover:underline">Book a Reservation</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="flex justify-between py-4 sm:px-3 lg:w-3/12 lg:py-0 lg:block">
-          <p class="text-lg font-bold uppercase lg:text-base">Our Formulas</p>
-          <span>
-            <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square lg:hidden"></i>
-          </span>
-          <div class="hidden lg:contents">
-            <ul class="text-sm list-none">
-              <li class="cursor-pointer hover:underline">No Parabens</li>
-              <li class="cursor-pointer hover:underline">No Phthalates</li>
-              <li class="cursor-pointer hover:underline">No Triclosan</li>
-              <li class="cursor-pointer hover:underline">No Sulfate</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="container max-w-6xl m-auto lg:hidden">
-          <hr class="my-4 sm:my-8">
-        </div>
-
-        <div class="sm:px-3">
-          <h1 class="my-4 text-4xl font-bold text-yellow-500 uppercase lg:text-5xl lg:mb-28">Bringing back the
-            basics
+        <div
+          class="flex flex-col items-center justify-center max-w-screen-sm p-8 text-center bg-gray-100 sm:max-w-screen-md sm:px-16 sm:py-8 bg-opacity-70 md:max-w-screen-lg lg:px-4">
+          <h1
+            class="mb-6 text-4xl font-bold tracking-widest uppercase sm:text-5xl sm:mt-6 md:text-7xl md:mb-8 lg:text-5xl">
+            Get the
+            Latest
+            Items
           </h1>
-          <div>
-            <label for="email" class="mb-1 text-sm uppercase m-0.5 block">Sign up for our emails</label>
-            <div class="flex items-start flex-1">
-              <input type="text" name="email" required placeholder="Enter your email address"
-                class="text-sm bg-transparent border-2 border-yellow-500 rounded-tl rounded-bl ml-0.5 p-4 container max-w-md">
-              <input id="submit" type="submit" value="Submit"
-                class="text-sm bg-yellow-500 border-2 border-yellow-500 rounded-tr rounded-br cursor-pointer hover:text-white outline-none mr-0.5 p-4 max-w-xs">
+          <h3 class="mb-6 text-2xl font-normal tracking-wide uppercase sm:mb-5 md:mb-10">Animal-Cruelty Free.</h3>
+          <button route="/products"
+            class="px-12 py-4 text-base tracking-widest uppercase bg-yellow-400 border-2 border-yellow-400 shadow-lg outline-none cursor-pointer hover:bg-transparent">shop
+            now</button>
+          <h4 class="mt-6 text-lg tracking-wide sm:mb-6 md:mt-8"> Be the first to have the latest, premium
+            products delivered to your door.</h4>
+        </div>
+      </div>
+    </header>
+
+    <!-- HOW IT WORKS -->
+    <div class="py-8">
+      <div class="max-w-6xl px-4 m-auto text-center">
+        <h2 class="text-4xl font-normal tracking-wide text-center uppercase">
+          how it works
+        </h2>
+        <div
+          class="grid max-w-6xl py-4 m-0 sm:w-screen xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 auto-rows-auto gap-x-3 gap-y-8 md:w-full">
+          <div class="flex flex-col items-center">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/abtesting-assets/gtb_master_12720_rollover/img/ico-customize-b.svg"
+              alt="" class="container px-8">
+            <h3 class="px-8 mb-2 text-xl font-semibold tracking-wide">Customize</h3>
+            <p class="px-8">As VIP members, be the one of the first to choose all premium products and add-ons. Receive
+              the latest
+              beauty insider secrets one month before product release date.</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/abtesting-assets/gtb_master_12720_rollover/img/ico-delivered-b.svg"
+              alt="" class="container px-8">
+            <h3 class="px-8 mb-2 text-xl font-semibold tracking-wide">Get It</h3>
+            <p class="px-8">Indulge in the best in beauty and wellness ― animal-cruelty free, guilt-free. Don't forget
+              to
+              #Mortar&Pestle when you share!</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/abtesting-assets/gtb_master_12720_rollover/img/ico-explore-b.svg"
+              alt="" class="container px-8">
+            <h3 class="px-8 mb-2 text-xl font-semibold tracking-wide">Connect</h3>
+            <p class="px-8">With your membership, look and feel great with other VIPs, shop exclusive member sales, and
+              join our
+              amazing
+              Mortar & Pestle community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA BREAK -->
+    <div class="text-lg tracking-wide text-center text-white bg-black py-7">
+      <div
+        class="container flex flex-col items-center max-w-6xl px-6 py-0 m-auto sm:justify-between lg:flex-row lg:px-6">
+        <div class="flex items-center mb-6 font-bold uppercase lg:mb-0">
+          <i class="far fa-times-circle"></i>
+          <p class="ml-1">No Parabens or Sulfates</p>
+        </div>
+        <div>
+          <button route="/products"
+            class="px-12 py-4 text-base font-bold tracking-widest uppercase bg-yellow-400 border-2 border-yellow-400 shadow-lg outline-none cursor-pointer lg:px-12 hover:text-black">shop
+            now</button>
+        </div>
+        <div class="flex items-center mt-6 font-bold uppercase lg:mt-0">
+          <i class="fas fa-globe"></i>
+          <p class="ml-1">free shipping, worldwide</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIP INSIDER COMMUNITY -->
+    <section class="px-0 m-auto">
+      <div class="flex items-center justify-center bg-purple-100">
+        <div class="flex flex-col pt-16 pb-16 sm:pb-16 sm:max-w-6xl lg:flex-row md:pb-8 lg:pb-24">
+          <div class="pl-8 text-center lg:text-left lg:pl-8 lg:w-2/6 sm:w-full md:pl-0">
+            <h2 class="mr-8 text-5xl font-bold underline uppercase sm:mr-0 sm:mb-4 md:text-6xl lg:text-3xl">VIP Insider
+              Community</h2>
+            <p class="py-8 pr-4 mr-8 text-base tracking-wider sm:text-lg sm:pr-8 md:w-full md:px-16 lg:pl-0 lg:pr-4">
+              Still not
+              convinced? Check
+              out our
+              Mortar &
+              Pestle
+              Community
+              where
+              you
+              can
+              ask questions,
+              join challenges,
+              and
+              get
+              recommendations from our stylists and people like you. See what our brand representatives have to say
+              about
+              our
+              products and partners.</p>
+          </div>
+
+          <div id="reps"
+            class="grid w-full max-w-6xl grid-cols-1 m-0 sm:grid-cols-2 lg:grid-cols-3 auto-rows-auto sm:gap-x-6 sm:gap-y-16 gap-y-6 sm:px-6 md:px-16 md:gap-y-4 lg:px-0 lg:gap-y-16 lg:w-4/6 lg:pr-8">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="flex flex-col items-center py-8 bg-white z-60 lg:px-4">
+        <div class="container flex-col hidden max-w-6xl text-yellow-400 lg:flex lg:items-center lg:flex-row lg:m-auto">
+          <a href="#" class="flex mb-4 ml-8 lg:w-2/12 md:flex-row lg:ml-4">
+            <i class="pr-2 text-2xl fas fa-store-alt lg:text-xl"></i>
+            <span class="flex flex-col text-xs">
+              <span class="text-lg font-bold text-black lg:text-xs">Find a Store</span>
+              <span class="text-black lg:text-xs">Shop at This Mall</span>
+            </span>
+          </a>
+          <a href="#" class="flex flex-row mb-4 lg:w-2/12">
+            <i class="pr-2 text-3xl sm:text-2xl far fa-comment-dots"></i>
+            <span class="flex flex-col text-xs">
+              <span class="text-lg font-bold text-black sm:text-base lg:text-xs">Customer Live Chat</span>
+              <span class="text-black">Available</span>
+            </span>
+          </a>
+          <a href="#" class="flex flex-row pr-3 mb-4 sm:w-2/12 sm:mb-0 lg:mb-4">
+            <i class="pr-3 text-3xl lg:pr-2 lg:text-2xl fas fa-phone-square-alt"></i>
+            <span class="flex flex-col text-xs">
+              <span class="text-lg font-bold text-black sm:text-base lg:text-xs">1.877.123.4567</span>
+              <span class="text-black">TTY: 1.888.888.1234</span>
+            </span>
+          </a>
+          <a href="#" class="flex flex-row mb-4 sm:w-2/12 lg:mb-4">
+            <i class="pr-2 text-3xl lg:text-2xl fas fa-mobile-alt"></i>
+            <span class="flex flex-col text-xs">
+              <span class="font-bold text-black">Download the App</span>
+              <span class="text-black">Text “APP” to 12345</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="container hidden max-w-6xl m-auto lg:block">
+          <hr class="my-8">
+        </div>
+
+        <div class="flex flex-col justify-between w-full max-w-6xl px-8 m-auto lg:flex-row lg:px-0">
+          <div class="flex justify-between py-4 sm:px-3 lg:w-3/12 lg:py-0 lg:block">
+            <p class="text-lg font-bold uppercase lg:text-base lg:mb-2">About Us</p>
+            <span class="lg:hidden">
+              <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square"></i>
+            </span>
+            <div class="hidden lg:contents">
+              <ul class="text-sm list-none">
+                <li class="cursor-pointer hover:underline">About Mortar & Pestle</li>
+                <li class="cursor-pointer hover:underline">Careers</li>
+                <li class="cursor-pointer hover:underline">Affiliates</li>
+                <li class="cursor-pointer hover:underline">Diversity & Inclusion</li>
+                <li class="cursor-pointer hover:underline">Events</li>
+                <li class="cursor-pointer hover:underline">Supply Transparency</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex justify-between py-4 sm:px-3 lg:w-3/12 lg:py-0 lg:block">
+            <p class="text-lg font-bold uppercase lg:text-base lg:mb-2">Guest Services</p>
+            <span class="lg:hidden">
+              <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square"></i>
+            </span>
+            <div class="hidden lg:contents">
+              <ul class="text-sm list-none">
+                <li class="cursor-pointer hover:underline">Guest Services Center</li>
+                <li class="cursor-pointer hover:underline">Order Status</li>
+                <li class="cursor-pointer hover:underline">Shipping Policy & Rate</li>
+                <li class="cursor-pointer hover:underline">Returns</li>
+                <li class="cursor-pointer hover:underline">Online Ordering</li>
+                <li class="cursor-pointer hover:underline">Contact Us</li>
+                <li class="cursor-pointer hover:underline">Billing</li>
+                <li class="cursor-pointer hover:underline">In Store Pick Up</li>
+                <li class="cursor-pointer hover:underline">Gift Cards</li>
+                <li class="cursor-pointer hover:underline">Privacy Rights</li>
+                <li class="cursor-pointer hover:underline">Accessibility</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex justify-between py-4 sm:px-3 lg:w-3/12 lg:py-0 lg:block">
+            <p class="text-lg font-bold uppercase lg:text-base">My Rewards</p>
+            <span>
+              <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square lg:hidden"></i>
+            </span>
+            <div class="hidden lg:contents">
+              <ul class="text-sm list-none">
+                <li class="cursor-pointer hover:underline">My Rewards Program</li>
+                <li class="cursor-pointer hover:underline">Purchase History</li>
+                <li class="cursor-pointer hover:underline">Account Settings</li>
+                <li class="cursor-pointer hover:underline">Beauty Offers</li>
+                <li class="cursor-pointer hover:underline">Bonuses</li>
+                <li class="cursor-pointer hover:underline">My Favorites</li>
+                <li class="cursor-pointer hover:underline">Book a Reservation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex justify-between py-4 sm:px-3 lg:w-3/12 lg:py-0 lg:block">
+            <p class="text-lg font-bold uppercase lg:text-base">Our Formulas</p>
+            <span>
+              <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square lg:hidden"></i>
+            </span>
+            <div class="hidden lg:contents">
+              <ul class="text-sm list-none">
+                <li class="cursor-pointer hover:underline">No Parabens</li>
+                <li class="cursor-pointer hover:underline">No Phthalates</li>
+                <li class="cursor-pointer hover:underline">No Triclosan</li>
+                <li class="cursor-pointer hover:underline">No Sulfate</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container max-w-6xl m-auto lg:hidden">
+            <hr class="my-4 sm:my-8">
+          </div>
+
+          <div class="sm:px-3">
+            <h1 class="my-4 text-4xl font-bold text-yellow-500 uppercase lg:text-5xl lg:mb-28">Bringing back the
+              basics
+            </h1>
+            <div>
+              <label for="email" class="mb-1 text-sm uppercase m-0.5 block">Sign up for our emails</label>
+              <div class="flex items-start flex-1">
+                <input type="text" name="email" required placeholder="Enter your email address"
+                  class="text-sm bg-transparent border-2 border-yellow-500 rounded-tl rounded-bl ml-0.5 p-4 container max-w-md">
+                <input id="submit" type="submit" value="Submit"
+                  class="text-sm bg-yellow-500 border-2 border-yellow-500 rounded-tr rounded-br cursor-pointer hover:text-white outline-none mr-0.5 p-4 max-w-xs">
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="container max-w-6xl m-auto">
-        <hr class="my-8">
-      </div>
+        <div class="container max-w-6xl m-auto">
+          <hr class="my-8">
+        </div>
 
-      <div class="container max-w-6xl px-8 m-auto">
-        <p class="text-xs sm:text-sm">© 2021 Mortar & Pestle, Inc. All rights reserved.</p>
+        <div class="container max-w-6xl px-8 m-auto">
+          <p class="text-xs sm:text-sm">© 2021 Mortar & Pestle, Inc. All rights reserved.</p>
+        </div>
       </div>
-    </div>
-  </footer>
-
+    </footer>
+  </main>
   <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
   <script src="/src/index.js"></script>
   <script src="/src/pages/landing/landing.js"></script>
+
 </body>
 
 </html>
