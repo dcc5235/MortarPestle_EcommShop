@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortar & Pestle | Checkout</title>
+  <script src="https://kit.fontawesome.com/539a3afe41.js" crossorigin="anonymous"></script>
+  <link href="/src/css/build-tailwind.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <main id="main">
+    <!-- NAVBAR -->
+    <nav class="z-10 flex items-center h-16 bg-white">
+      <div class="container flex items-center max-w-6xl px-4 py-0 md:px-6 sm:m-auto sm:justify-between">
+        <div id="logo" class="flex items-center">
+          <span class="m-2 text-2xl text-yellow-500">
+            <i class="fas fa-mortar-pestle"></i>
+          </span>
+          <p class="text-3xl font-semibold w-max">Mortar & Pestle</p>
+        </div>
+        <!-- MOBILE -->
+        <span class="justify-end text-2xl sm:invisible">
+          <i class="fas fa-bars"></i>
+        </span>
+        <!-- END MOBILE -->
+        <div class="container items-center hidden sm:flex sm:flex-row-reverse sm:visible">
+          <div class="flex items-center sm:w-max">
+            <button
+              class="px-2 py-2 text-base tracking-wide text-white uppercase bg-yellow-500 border-2 border-yellow-500 outline-none cursor-pointer md:px-6 hover:bg-yellow-500 hover:text-black"><span
+                class="text-white"><i class="fas fa-heart"></i></span> my
+              rewards</button>
+          </div>
+          <div class="flex items-center pr-2 cursor-pointer md:pr-6 hover:text-yellow-500">
+            <span class="m-2 text-xl text-yellow-500">
+              <i class="fas fa-clipboard-check"></i>
+            </span>
+            <p class="text-base uppercase">Login</p>
+          </div>
+          <div class="flex items-center pr-2 cursor-pointer md:pr-6 hover:text-yellow-500">
+            <span class="m-2 text-xl text-yellow-500">
+              <i class="fas fa-gift"></i>
+            </span>
+            <p class="text-base uppercase">Gift</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SHOPPING BASKET -->
+    <section class="max-w-5xl px-0 pt-8 m-auto sm:pt-16">
+      <div class="flex items-center justify-center mb-12 text-4xl font-bold tracking-widest uppercase">
+        <span class="pr-4 text-3xl">
+          <i class="fas fa-shopping-basket"></i>
+        </span>
+        <h2 class="text-4xl tracking-wide text-center uppercase">
+          My Basket
+        </h2>
+      </div>
+
+      <div class="flex flex-col m-auto lg:flex-row">
+        <div class="sm:mx-8 lg:mx-0">
+          <div class="max-w-3xl">
+            <h3 class="m-4 text-lg font-bold tracking-widest text-left text-yellow-500 uppercase">Items in basket</h3>
+            <hr class="mx-4">
+          </div>
+          <div class="flex max-w-2xl mt-4 text-4xl tracking-widest text-center uppercase sm:mb-4 lg:mb-8">
+            <div class="grid w-screen max-w-3xl grid-cols-1 pb-20 m-0 auto-rows-auto gap-x-6 gap-y-4">
+              <!-- THIS GOES W/JS FILE IN PRODUCTS FOLDER
+                <div class="container p-6 mt-0 mr-0 tracking-widest text-center uppercase">
+
+                <div class="bag-content">
+                  <div class="basket-item">
+
+                  </div>
+                  <hr>
+                </div>
+                <div class="mt-8 tracking-widest text-center">
+                  <hr>
+                  <h3 class="my-4 uppercase">estimated total: $
+                    <span id="total-costs" class="text-bold">14.00</span>
+                  </h3>
+                </div>
+              </div> -->
+
+              <article
+                class="grid max-w-3xl grid-cols-1 p-4 m-0 overflow-hidden text-2xl sm:grid-cols-3 auto-rows-auto gap-x-2 gap-y-4">
+                <div id="img-container" class="w-full">
+                  <img src="/src/assets/images/checkout/sample-checkout-img.jpg" alt="sample general cosmetic product"
+                    class="md:w-4/5">
+                </div>
+                <div class="flex flex-col items-center text-sm tracking-widest text-left">
+                  <h3 class="mt-4 uppercase">Luft Collection</h3>
+                  <h4 class="my-2 text-yellow-500 normal-case">Glowing Bronzer</h4>
+                  <h5 class="mx-0 my-2">$12.99</h5>
+                </div>
+                <div class="flex flex-row items-center text-lg justify-evenly">
+                  <i id="decrement" class="text-yellow-500 cursor-pointer far fa-minus-square" data-id=${item.id}></i>
+                  <p class="text-center">1</p>
+                  <i id="increment" class="text-yellow-500 cursor-pointer far fa-plus-square" data-id=${item.id}></i>
+                </div>
+              </article>
+              <hr class="mx-4">
+              <article
+                class="grid max-w-3xl grid-cols-1 p-4 m-0 overflow-hidden text-2xl sm:grid-cols-3 auto-rows-auto gap-x-2 gap-y-4">
+                <div id="img-container" class="w-full">
+                  <img src="/src/assets/images/checkout/sample-checkout-img.jpg" alt="sample general cosmetic product"
+                    class="md:w-4/5">
+                </div>
+                <div class="flex flex-col items-center text-sm tracking-widest text-left">
+                  <h3 class="mt-4 uppercase">Luft Collection</h3>
+                  <h4 class="my-2 text-yellow-500 normal-case">Glowing Bronzer</h4>
+                  <h5 class="mx-0 my-2">$12.99</h5>
+                </div>
+                <div class="flex flex-row items-center text-lg justify-evenly">
+                  <i id="decrement" class="text-yellow-500 cursor-pointer far fa-minus-square" data-id=${item.id}></i>
+                  <p class="text-center">1</p>
+                  <i id="increment" class="text-yellow-500 cursor-pointer far fa-plus-square" data-id=${item.id}></i>
+                </div>
+              </article>
+              <hr class="mx-4">
+              <article
+                class="grid max-w-3xl grid-cols-1 p-4 m-0 overflow-hidden text-2xl sm:grid-cols-3 auto-rows-auto gap-x-2 gap-y-4">
+                <div id="img-container" class="w-full">
+                  <img src="/src/assets/images/checkout/sample-checkout-img.jpg" alt="sample general cosmetic product"
+                    class="md:w-4/5">
+                </div>
+                <div class="flex flex-col items-center text-sm tracking-widest text-left">
+                  <h3 class="mt-4 uppercase">Luft Collection</h3>
+                  <h4 class="my-2 text-yellow-500 normal-case">Glowing Bronzer</h4>
+                  <h5 class="mx-0 my-2">$12.99</h5>
+                </div>
+                <div class="flex flex-row items-center text-lg justify-evenly">
+                  <i id="decrement" class="text-yellow-500 cursor-pointer far fa-minus-square" data-id=${item.id}></i>
+                  <p class="text-center">1</p>
+                  <i id="increment" class="text-yellow-500 cursor-pointer far fa-plus-square" data-id=${item.id}></i>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:mx-8 lg:mx-0 lg:max-w">
+          <div class="w-full lg:ml-4">
+            <h3 class="m-4 text-lg font-bold tracking-widest text-left text-yellow-500 uppercase">order summary</h3>
+            <hr class="mx-4">
+          </div>
+          <div id="paypal-btn"
+            class="w-full max-w-lg p-4 text-sm md:ml-4 border-opacity-60 sm:pr-28 sm:max-w-xl lg:pr-0 lg:max-w-none">
+            <p class="mb-4 text-lg sm:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quasi
+              iure quod ut
+              soluta
+              dolor, ipsum
+              quisquam nisi illo perspiciatis eos, ratione voluptates praesentium. Velit blanditiis recusandae
+              asperiores
+              ab placeat.</p>
+            <p class="mb-4 font-semibold text-center uppercase text-md text-bold">free shipping for vip members
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP MORE -->
+    <!-- <section class="w-full max-w-6xl px-0 m-auto">
+
+      <div class="flex items-center justify-center mt-4 mb-12 text-4xl font-bold tracking-widest uppercase">
+        <h2 class="text-4xl tracking-wide text-center uppercase">
+          you might also love
+        </h2>
+      </div>
+
+      <div class="flex text-4xl tracking-widest text-center uppercase sm:mb-4 lg:mb-8">
+        <div class="grid w-screen max-w-6xl grid-cols-4 m-0 auto-rows-auto gap-x-6 gap-y-8">
+          <article class="p-4 text-2xl text-left">
+            <div id="img-container" class="relative w-full overflow-hidden hover:opacity-50">
+              <img src="/src/assets/images/checkout/product-glow-lipstick.jpg"
+                alt="glow glam matte lush lipstick in shades of red"
+                class="container block w-full min-h-full transition duration-300 ease-in">
+            </div>
+            <h3 class="mt-4 text-base tracking-widest text-center uppercase">Glow Glam</h3>
+            <h3 class="text-base tracking-widest text-center normal-case">Matte Lush Lipstick</h3>
+            <h4 class="mt-3 tracking-widest text-center text-bold">$9.00</h4>
+          </article>
+
+          <article class="p-4 text-2xl text-left">
+            <div id="img-container" class="relative w-full overflow-hidden hover:opacity-50">
+              <img src="/src/assets/images/checkout/product-bee-brushes.jpg" alt="queen bee makeup brush set"
+                class="container block w-full min-h-full transition duration-300 ease-in">
+            </div>
+            <h3 class="mt-4 text-base tracking-widest text-center uppercase">Queen Bee</h3>
+            <h3 class="text-base tracking-widest text-center normal-case">Ready to Roll Brush Set</h3>
+            <h4 class="mt-3 tracking-widest text-center text-bold">$45.00</h4>
+          </article>
+
+          <article class="p-4 text-2xl text-left">
+            <div id="img-container" class="relative w-full overflow-hidden hover:opacity-50 ">
+              <img src="/src/assets/images/checkout/product-dc-palette.jpg" alt="D C collection eye palettes in nudes"
+                class="container block w-full min-h-full transition duration-300 ease-in">
+            </div>
+            <h3 class="mt-4 text-base tracking-widest text-center uppercase">DC Collection</h3>
+            <h3 class="text-base tracking-widest text-center normal-case">Eye-Conic Palette</h3>
+            <h4 class="mt-3 tracking-widest text-center text-bold">$34.50</h4>
+          </article>
+
+          <article class="p-4 text-2xl text-left">
+            <div id="img-container" class="relative w-full overflow-hidden hover:opacity-50">
+              <img src="/src/assets/images/checkout/product-becks-travel.jpg"
+                alt="becks travel set with eye palette and brush set"
+                class="container block w-full min-h-full transition duration-300 ease-in">
+            </div>
+            <h3 class="mt-4 text-base tracking-widest text-center uppercase">Becks</h3>
+            <h3 class="text-base tracking-widest text-center normal-case">On the Go Travel Set</h3>
+            <h4 class="mt-3 tracking-widest text-center text-bold">$50.00</h4>
+          </article>
+
+        </div>
+      </div>
+
+
+    </section> -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="flex flex-col items-center py-8 bg-white z-60 lg:px-4">
+        <div class="container flex-col hidden max-w-6xl text-yellow-400 lg:flex lg:items-center lg:flex-row lg:m-auto">
+          <a href="#" class="flex mb-4 ml-8 lg:w-2/12 md:flex-row lg:ml-4">
+            <i class="pr-2 text-2xl fas fa-store-alt lg:text-xl"></i>
+            <span class="flex flex-col text-xs">
+              <span class="text-lg font-bold text-black lg:text-xs">Find a Store</span>
+              <span class="text-black lg:text-xs">Shop at This Mall</span>
+            </span>
+          </a>
+          <a href="#" class="flex flex-row mb-4 lg:w-2/12">
+            <i class="pr-2 text-3xl sm:text-2xl far fa-comment-dots"></i>
+            <span class="flex flex-col text-xs">
+              <span class="text-lg font-bold text-black sm:text-base lg:text-xs">Customer Live Chat</span>
+              <span class="text-black">Available</span>
+            </span>
+          </a>
+          <a href="#" class="flex flex-row pr-3 mb-4 sm:w-2/12 sm:mb-0 lg:mb-4">
+            <i class="pr-3 text-3xl lg:pr-2 lg:text-2xl fas fa-phone-square-alt"></i>
+            <span class="flex flex-col text-xs">
+              <span class="text-lg font-bold text-black sm:text-base lg:text-xs">1.877.123.4567</span>
+              <span class="text-black">TTY: 1.888.888.1234</span>
+            </span>
+          </a>
+          <a href="#" class="flex flex-row mb-4 sm:w-2/12 lg:mb-4">
+            <i class="pr-2 text-3xl lg:text-2xl fas fa-mobile-alt"></i>
+            <span class="flex flex-col text-xs">
+              <span class="font-bold text-black">Download the App</span>
+              <span class="text-black">Text “APP” to 12345</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="container hidden max-w-6xl m-auto lg:block">
+          <hr class="my-8">
+        </div>
+
+        <div class="flex flex-col justify-between w-full max-w-6xl px-8 m-auto lg:flex-row lg:px-0">
+          <div class="flex justify-between py-4 sm:px-3 lg:w-3/12 lg:py-0 lg:block">
+            <p class="text-lg font-bold uppercase lg:text-base lg:mb-2">About Us</p>
+            <span class="lg:hidden">
+              <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square"></i>
+            </span>
+            <div class="hidden lg:contents">
+              <ul class="text-sm list-none">
+                <li class="cursor-pointer hover:underline">About Mortar & Pestle</li>
+                <li class="cursor-pointer hover:underline">Careers</li>
+                <li class="cursor-pointer hover:underline">Affiliates</li>
+                <li class="cursor-pointer hover:underline">Diversity & Inclusion</li>
+                <li class="cursor-pointer hover:underline">Events</li>
+                <li class="cursor-pointer hover:underline">Supply Transparency</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex justify-between py-4 sm:px-3 lg:w-3/12 lg:py-0 lg:block">
+            <p class="text-lg font-bold uppercase lg:text-base lg:mb-2">Guest Services</p>
+            <span class="lg:hidden">
+              <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square"></i>
+            </span>
+            <div class="hidden lg:contents">
+              <ul class="text-sm list-none">
+                <li class="cursor-pointer hover:underline">Guest Services Center</li>
+                <li class="cursor-pointer hover:underline">Order Status</li>
+                <li class="cursor-pointer hover:underline">Shipping Policy & Rate</li>
+                <li class="cursor-pointer hover:underline">Returns</li>
+                <li class="cursor-pointer hover:underline">Online Ordering</li>
+                <li class="cursor-pointer hover:underline">Contact Us</li>
+                <li class="cursor-pointer hover:underline">Billing</li>
+                <li class="cursor-pointer hover:underline">In Store Pick Up</li>
+                <li class="cursor-pointer hover:underline">Gift Cards</li>
+                <li class="cursor-pointer hover:underline">Privacy Rights</li>
+                <li class="cursor-pointer hover:underline">Accessibility</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex justify-between py-4 sm:px-3 lg:w-3/12 lg:py-0 lg:block">
+            <p class="text-lg font-bold uppercase lg:text-base">My Rewards</p>
+            <span>
+              <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square lg:hidden"></i>
+            </span>
+            <div class="hidden lg:contents">
+              <ul class="text-sm list-none">
+                <li class="cursor-pointer hover:underline">My Rewards Program</li>
+                <li class="cursor-pointer hover:underline">Purchase History</li>
+                <li class="cursor-pointer hover:underline">Account Settings</li>
+                <li class="cursor-pointer hover:underline">Beauty Offers</li>
+                <li class="cursor-pointer hover:underline">Bonuses</li>
+                <li class="cursor-pointer hover:underline">My Favorites</li>
+                <li class="cursor-pointer hover:underline">Book a Reservation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex justify-between py-4 sm:px-3 lg:w-3/12 lg:py-0 lg:block">
+            <p class="text-lg font-bold uppercase lg:text-base">Our Formulas</p>
+            <span>
+              <i class="text-lg text-yellow-500 cursor-pointer far fa-plus-square lg:hidden"></i>
+            </span>
+            <div class="hidden lg:contents">
+              <ul class="text-sm list-none">
+                <li class="cursor-pointer hover:underline">No Parabens</li>
+                <li class="cursor-pointer hover:underline">No Phthalates</li>
+                <li class="cursor-pointer hover:underline">No Triclosan</li>
+                <li class="cursor-pointer hover:underline">No Sulfate</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container max-w-6xl m-auto lg:hidden">
+            <hr class="my-4 sm:my-8">
+          </div>
+
+          <div class="sm:px-3">
+            <h1 class="my-4 text-4xl font-bold text-yellow-500 uppercase lg:text-5xl lg:mb-28">Bringing back the
+              basics
+            </h1>
+            <div>
+              <label for="email" class="mb-1 text-sm uppercase m-0.5 block">Sign up for our emails</label>
+              <div class="flex items-start flex-1">
+                <input type="text" name="email" required placeholder="Enter your email address"
+                  class="text-sm bg-transparent border-2 border-yellow-500 rounded-tl rounded-bl ml-0.5 p-4 container max-w-md">
+                <input id="submit" type="submit" value="Submit"
+                  class="text-sm bg-yellow-500 border-2 border-yellow-500 rounded-tr rounded-br cursor-pointer hover:text-white outline-none mr-0.5 p-4 max-w-xs">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container max-w-6xl m-auto">
+          <hr class="my-8">
+        </div>
+
+        <div class="container max-w-6xl px-8 m-auto">
+          <p class="text-xs sm:text-sm">© 2021 Mortar & Pestle, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+  <script src="https://www.paypal.com/sdk/js?client-id=test"></script>
+  <script src="/src/pages/checkout/paypal/index.js"></script>
+  <script src="/src/pages/checkout/route.js"></script>
+</body>
+
+</html>
