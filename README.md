@@ -24,6 +24,11 @@ A full-featured e-commerce DEMO platform with landing page. Users are re-routed 
 - Product data added into basket and removed from basket, updated through local storage
 - Headless CMS Contentful to store product data, retrieved data through API integration
 
+## Additional Features to Add
+- Need to apply logic that routes from products page to check out page with data from shopping bag stored
+- Integration of Paypal API
+- Optimize images
+
 ## Credits
 
 - Design Inspiration from eCommerce platforms, including [Sephora](https://www.sephora.com/), [FabFitFun](https://fabfitfun.com/), [Tarte](https://tartecosmetics.com/), and [Ulta](https://www.ulta.com/).
