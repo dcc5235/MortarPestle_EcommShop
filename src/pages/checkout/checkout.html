@@ -68,23 +68,6 @@
           </div>
           <div class="flex max-w-2xl mt-4 text-4xl tracking-widest text-center uppercase sm:mb-4 lg:mb-8">
             <div class="grid w-screen max-w-3xl grid-cols-1 pb-12 m-0 auto-rows-auto gap-x-6 gap-y-4">
-              <!-- THIS GOES W/JS FILE IN PRODUCTS FOLDER
-                <div class="container p-6 mt-0 mr-0 tracking-widest text-center uppercase">
-
-                <div class="bag-content">
-                  <div class="basket-item">
-
-                  </div>
-                  <hr>
-                </div>
-                <div class="mt-8 tracking-widest text-center">
-                  <hr>
-                  <h3 class="my-4 uppercase">estimated total: $
-                    <span id="total-costs" class="text-bold">14.00</span>
-                  </h3>
-                </div>
-              </div> -->
-
               <article
                 class="grid max-w-3xl grid-cols-1 p-4 m-0 overflow-hidden text-2xl sm:grid-cols-3 auto-rows-auto gap-x-2 gap-y-4">
                 <div id="img-container" class="w-full">
@@ -121,23 +104,9 @@
                 </div>
               </article>
               <hr class="mx-4">
-              <article
-                class="grid max-w-3xl grid-cols-1 p-4 m-0 overflow-hidden text-2xl sm:grid-cols-3 auto-rows-auto gap-x-2 gap-y-4">
-                <div id="img-container" class="w-full">
-                  <img src="/src/assets/images/checkout/sample-checkout-img.jpg" alt="sample general cosmetic product"
-                    class="md:w-4/5">
-                </div>
-                <div class="flex flex-col items-center text-sm tracking-widest text-left">
-                  <h3 class="mt-4 uppercase">Luft Collection</h3>
-                  <h4 class="my-2 text-yellow-500 normal-case">Glowing Bronzer</h4>
-                  <h5 class="mx-0 my-2">$12.99</h5>
-                </div>
-                <div class="flex flex-row items-center text-lg justify-evenly">
-                  <i id="decrement" class="text-yellow-500 cursor-pointer far fa-minus-square" data-id=${item.id}></i>
-                  <p class="text-center">1</p>
-                  <i id="increment" class="text-yellow-500 cursor-pointer far fa-plus-square" data-id=${item.id}></i>
-                </div>
-              </article>
+              <div class="max-w-3xl">
+                <h3 class="m-4 text-lg font-bold tracking-widest text-right uppercase">Estimated Total: $25.98</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -366,7 +335,7 @@
   </main>
   <script src="https://www.paypal.com/sdk/js?client-id=test"></script>
   <script src="/src/pages/checkout/paypal/index.js"></script>
-  <script src="/src/pages/checkout/route.js"></script>
+  <script src="../../../route.js"></script>
 </body>
 
 </html>
