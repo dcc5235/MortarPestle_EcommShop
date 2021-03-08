@@ -1,6 +1,6 @@
 # Mortar & Pestle eCommerce Platform ![GitHub version doc](https://img.shields.io/badge/Version-1.0.0-red) ![GitHub last commit](https://img.shields.io/github/last-commit/dcc5235/Portfolio?style=flat-square) 
 
-HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT | NODE.JS | REST API
+HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT | REST API
 
 A full-featured e-commerce DEMO platform with landing page. Users are re-routed to the product shopping page from the landing page shop buttons where they can add items to the shopping basket, add additional items, and remote items from the shopping basket. 
 
