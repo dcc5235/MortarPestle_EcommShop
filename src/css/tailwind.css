@@ -2,18 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-#basket {
-  min-width: 26rem;
-}
-
+/* LANDING PAGE NAV */
 #logo {
   width: inherit;
 }
 
+/* LANDING PAGE HEADER BG */
 #header {
   background-color: #d5ccdf;
 }
 
+/* SHOPPING BASKET WIDTH */
+#basket {
+  min-width: 26rem;
+}
+
+.basket-item {
+  display:flex;
+  justify-content: space-between;
+  
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+/* PRODUCTS PAGE */
 #img-container:hover button {
   transform: translateX(0);
 }
@@ -24,12 +36,4 @@
 
 .showBasket {
   transform: translateX(0);
-}
-
-.basket-item {
-  display:flex;
-  justify-content: space-between;
-  
-  align-items: center;
-  margin: 1.5rem 0;
 }
