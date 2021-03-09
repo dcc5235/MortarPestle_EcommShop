@@ -10,7 +10,7 @@ A full-featured e-commerce DEMO platform with landing page. Users are re-routed 
 <img src="https://media-exp1.licdn.com/dms/image/C4E22AQEVKsLH7BMLtw/feedshare-shrink_800/0/1612224711679?e=1618444800&v=beta&t=8rtz30jDKrD9CasLh0PfK2OxegKT_kOdjHJKR0G4zeE" width="30%"><img src="https://media-exp1.licdn.com/dms/image/C4E22AQH9gR-AYTCSKA/feedshare-shrink_800/0/1612224711132?e=1618444800&v=beta&t=SjRBvdfrxIxznB_BZh15Tbklq72dQF9EGwjze3q9bf4" width="30%"><img src="https://media-exp1.licdn.com/dms/image/C4E22AQG2LbZIp2i4mQ/feedshare-shrink_800/0/1612224712116?e=1618444800&v=beta&t=iuwm0Bxmn_sLoVJjyy-B08eaOb8N2dpxIL9mNIUmFFk" width="30%">
 
 #### Products Page
-<img src="https://media-exp1.licdn.com/dms/image/C4E22AQEO1E9ZY3eOMw/feedshare-shrink_800/0/1615317914583?e=1618444800&v=beta&t=2d6WazK9NrOEfo2y4HOl7dBipE9YIMriNgg77JP3gJA" width="40%"><img src="https://media-exp1.licdn.com/dms/image/C4E22AQGk2GnW9xaKRg/feedshare-shrink_800/0/1615317911443?e=1618444800&v=beta&t=WHkPwhwEKBYq6WyHYnBWAVy_B1PkAdu_OMdrWK933x4" width="35%">
+<img src="https://media-exp1.licdn.com/dms/image/C4E22AQEO1E9ZY3eOMw/feedshare-shrink_800/0/1615317914583?e=1618444800&v=beta&t=2d6WazK9NrOEfo2y4HOl7dBipE9YIMriNgg77JP3gJA" width="40%"><img src="https://media-exp1.licdn.com/dms/image/C4E22AQGk2GnW9xaKRg/feedshare-shrink_800/0/1615317911443?e=1618444800&v=beta&t=WHkPwhwEKBYq6WyHYnBWAVy_B1PkAdu_OMdrWK933x4" width="33%">
 
 ---
 
