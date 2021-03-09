@@ -1,10 +1,11 @@
 # Mortar & Pestle eCommerce Platform ![GitHub version doc](https://img.shields.io/badge/Version-1.0.0-red) ![GitHub last commit](https://img.shields.io/github/last-commit/dcc5235/Portfolio?style=flat-square) 
 
+
+## This is still a work in progress. However, you can demo what is available [here](https://mortarpestle.netlify.app/).
+
 HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT | REST API
 
 A full-featured e-commerce DEMO platform with landing page. Users are re-routed to the product shopping page from the landing page shop buttons where they can add items to the shopping basket, add additional items, and remote items from the shopping basket. 
-
-## This is still a work in progress. However, you can demo what is available [here](https://mortarpestle.netlify.app/).
 
 #### Landing Page
 <img src="https://media-exp1.licdn.com/dms/image/C4E22AQEVKsLH7BMLtw/feedshare-shrink_800/0/1612224711679?e=1618444800&v=beta&t=8rtz30jDKrD9CasLh0PfK2OxegKT_kOdjHJKR0G4zeE" width="30%"><img src="https://media-exp1.licdn.com/dms/image/C4E22AQH9gR-AYTCSKA/feedshare-shrink_800/0/1612224711132?e=1618444800&v=beta&t=SjRBvdfrxIxznB_BZh15Tbklq72dQF9EGwjze3q9bf4" width="30%"><img src="https://media-exp1.licdn.com/dms/image/C4E22AQG2LbZIp2i4mQ/feedshare-shrink_800/0/1612224712116?e=1618444800&v=beta&t=iuwm0Bxmn_sLoVJjyy-B08eaOb8N2dpxIL9mNIUmFFk" width="30%">
