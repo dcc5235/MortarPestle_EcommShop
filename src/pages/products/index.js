@@ -1,7 +1,6 @@
-// Temporary faux tokens/space which are reset periodically
 const client = contentful.createClient({
-  space: "apo0pwvj0cdv",
-  accessToken: "cH-2Qomem_4WIF6qp0eKgF07By7YcUoA9bckGNiRbPo"
+  space: "process.env.SPACE",
+  accessToken: "process.env.ACCESS_TOKEN"
 });
 
 // VARIABLES
