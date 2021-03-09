@@ -6,6 +6,15 @@ A full-featured e-commerce DEMO platform with landing page. Users are re-routed 
 
 ## This is still a work in progress. However, you can demo what is available [here](https://mortarpestle.netlify.app/).
 
+#### Landing Page
+<img src="https://media-exp1.licdn.com/dms/image/C4E22AQEVKsLH7BMLtw/feedshare-shrink_800/0/1612224711679?e=1618444800&v=beta&t=8rtz30jDKrD9CasLh0PfK2OxegKT_kOdjHJKR0G4zeE" width="30%"><img src="https://media-exp1.licdn.com/dms/image/C4E22AQH9gR-AYTCSKA/feedshare-shrink_800/0/1612224711132?e=1618444800&v=beta&t=SjRBvdfrxIxznB_BZh15Tbklq72dQF9EGwjze3q9bf4" width="30%"><img src="https://media-exp1.licdn.com/dms/image/C4E22AQG2LbZIp2i4mQ/feedshare-shrink_800/0/1612224712116?e=1618444800&v=beta&t=iuwm0Bxmn_sLoVJjyy-B08eaOb8N2dpxIL9mNIUmFFk" width="30%">
+
+#### Products Page
+<img src="" width="30%"><img src="" width="30%"><img src="" width="30%">
+
+#### Checkout Page
+<img src="" width="30%"><img src="" width="30%"><img src="" width="30%">
+
 ---
 
 ## Installation & Technologies
@@ -23,11 +32,12 @@ A full-featured e-commerce DEMO platform with landing page. Users are re-routed 
 - Router directs users from landing page to products on click with shop button
 - Product data added into basket and removed from basket, updated through local storage
 - Headless CMS Contentful to store product data, retrieved data through API integration
+- Partial integration of PayPal API which includes payment buttons
 
 ## Additional Features to Add
-- Need to apply logic that routes from products page to check out page with data from shopping bag stored
-- Integration of Paypal API
-- Optimize images
+- Need to apply logic that transfers data from shopping bag to checkout page
+- Full integration of PayPal API
+- Optimize images for quicker load time
 
 ## Credits
 
