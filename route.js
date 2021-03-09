@@ -1,11 +1,11 @@
 
-// ROUTER (NEEDS CLEAN UP)
-window.onload = function () {
+// ROUTER (NEED TO REFACTOR AND COMBINE W/INDEX.JS FILE IN SRC)
+window.onload = () => {
   const activeRoutes = Array.from(document.querySelectorAll('[route]'));
   function navigate(event) {
     let route = event.target.attributes[0].value;
-    let routeInfo = myFirstRouter.routes.filter(function (r) {
-      return r.path === route;
+    let routeInfo = myFirstRouter.routes.filter(function (routers) {
+      return routers.path === route;
     })[0];
     if (!routeInfo) {
       window.history.pushState({}, '', 'error')
@@ -13,7 +13,7 @@ window.onload = function () {
     }
   };
 
-  activeRoutes.forEach(function (route) {
+  activeRoutes.forEach(route => {
     route.addEventListener('click', navigate, false);
   });
 };
