@@ -1,8 +1,6 @@
 
 // ROUTER (NEEDS CLEAN UP)
 window.onload = function () {
-  const view = document.getElementById('view');
-
   const activeRoutes = Array.from(document.querySelectorAll('[route]'));
   function navigate(event) {
     let route = event.target.attributes[0].value;
