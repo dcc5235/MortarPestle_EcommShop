@@ -1,23 +1,23 @@
 // ROUTER
-window.onload = function () {
-  const view = document.getElementById('view');
+window.onload = () => {
+  const body = document.getElementById('body');
 
   const activeRoutes = Array.from(document.querySelectorAll('[route]'));
   function navigate(event) {
     let route = event.target.attributes[0].value;
-    let routeInfo = myFirstRouter.routes.filter(function (r) {
-      return r.path === route;
+    let routeInfo = myFirstRouter.routes.filter(routers => {
+      return routers.path === route;
     })[0];
     if (!routeInfo) {
       window.history.pushState({}, '', 'error')
-      view.innerHTML = '404 ERROR';
+      body.innerHTML = '404 ERROR: PAGE NOT FOUND';
     } else {
       window.history.pushState({}, 'name', routeInfo.path);
       window.location.pathname = '../products.html';
     }
   };
 
-  activeRoutes.forEach(function (route) {
+  activeRoutes.forEach(route => {
     route.addEventListener('click', navigate, false);
   });
 };
@@ -37,6 +37,10 @@ const myFirstRouter = new Router('myFirstRouter', [
   {
     path: '/products',
     name: 'Products'
+  },
+  {
+    path: '/checkout',
+    name: 'Checkout'
   }
 ]);
 
