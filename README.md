@@ -1,4 +1,4 @@
-# Mortar & Pestle eCommerce Platform ![GitHub version doc](https://img.shields.io/badge/Version-1.0.0-red) ![GitHub last commit](https://img.shields.io/github/last-commit/dcc5235/Portfolio?style=flat-square) 
+# Mortar & Pestle eCommerce Platform ![GitHub version doc](https://img.shields.io/badge/Version-1.0.0-red) ![GitHub last commit](https://img.shields.io/github/last-commit/dcc5235/MortarPestle_EcommShop?style=flat-square) 
 
 HTML5 | CSS3 | TAILWIND CSS | JAVASCRIPT | REST API
 
