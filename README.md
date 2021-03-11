@@ -21,6 +21,7 @@ A full-featured e-commerce DEMO platform with landing page. Users are re-routed 
   ```"build-css": "tailwindcss build ./src/css/tailwind.css -o ./src/css/build-tailwind.css"```.
 - Install [contentful](https://www.contentful.com/) headless CMS.
   - Run command line ```npm install contentful```.
+  - Required to load products images. However, images and products.json file are included, as well.
 - Install [PayPal API](https://developer.paypal.com/docs/api-basics/) for checkout buttons.
   - Sandbox account & REST API credentials are needed to test linked accounts.
 
